@@ -2,7 +2,7 @@
 include('../../inc/header.php');
 $getLiga = $_GET['id'];
 $ligas = mysqli_query($conn, "select * from ligas
-where ligaId = '$getLiga'");
+where ligaId = 23");
 $result = mysqli_fetch_array($ligas);
 ?>
 
