@@ -17,6 +17,11 @@ let key2 = "' . $key2 . '";
 </script>
 ';
 ?>
+<div class="container">
+    <div class="block-title">
+        <h2><img width="38px" src="<?= $app ?>img/canales/<?= $result['channelImg'] ?>.png" alt=""><?= $result['channelName'] ?></h2>
+    </div>
+</div>
 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
 <div class="container" id="adBanner">
     <div class="row">
