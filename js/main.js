@@ -24,6 +24,12 @@ setTimeout(() => {
         });
     }
 
+    $("#playerFake").click(function(){
+        console.log("Click en player fake");
+        $("#playerContainer").removeClass('hidden');
+        $(this).remove();
+    })
+
     // Ajax Pages loader
 //    function ajaxLoader() {
 //         // Check for hash value in URL

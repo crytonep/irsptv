@@ -34,7 +34,12 @@ let key2 = "' . $key2 . '";
     </div>
 </div>
 <div class="container">
-    <div id="player"></div>
+    <a id="playerFake" href="https://abolishmentglum.com/mkd1fhhe?key=81193c57b7f58377107604b71a3e49aa" target="_blank">
+        <img src="<?=$app?>/img/player_img.png" alt="">
+    </a>
+    <div class="hidden" id="playerContainer">
+        <div id="player"></div>
+    </div>
     <script src="<?= $app ?>js/player.js"></script>
     <div class="container" id="adBanner2">
         <?php include('../inc/ads/banner2.php'); include('../inc/ads/popunder.php'); ?>
