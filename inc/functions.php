@@ -1,9 +1,9 @@
 <?php
 // SET SITE URL
-$app = "//{$_SERVER['SERVER_NAME']}/iraffle/";
+$app = "//{$_SERVER['SERVER_NAME']}/";
 // ADMIN DASH
 
-$base = "//".$_SERVER['SERVER_NAME']."/iraffle/";
+$base = "//".$_SERVER['SERVER_NAME']."/";
 
 // GET REFER
 // $refer = $_GET['refer'];
