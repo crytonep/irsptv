@@ -44,31 +44,31 @@
             if ($dd_0 === $dd_1) {
                 if ($liga == "23") {
                     $link = "basket/nba?ir";
-                    include('agenda/basket/nba/teams.php');
+                    include('basket/nba/teams.php');
                     $localImg = $local;
                     $visitaImg = $visita;
                     $isMotor = "";
                 } elseif ($liga == "12" || $liga == 13) {
                     $link = "basket/liga?id=" . $liga;
-                    include('agenda/basket/liga/teams.php');
+                    include('basket/liga/teams.php');
                     $localImg = str_replace(" ", "", $result['local']);
                     $visitaImg = str_replace(" ", "", $result['visita']);
                     $isMotor = "";
                 } elseif ($liga == "22") {
                     $link = "mlb?ir";
-                    include('agenda/mlb/teams.php');
+                    include('mlb/teams.php');
                     $localImg = strtolower($local);
                     $visitaImg = strtolower($visita);
                     $isMotor = "";
                 } elseif ($liga == "25") {
                     $link = "balonmano?ir";
-                    include('agenda/balonmano/teams.php');
+                    include('balonmano/teams.php');
                     $localImg = str_replace(" ", "", $result['local']);
                     $visitaImg = str_replace(" ", "", $result['visita']);
                     $isMotor = "";
                 } elseif ($liga == "14") {
                     $link = "nfl?ir";
-                    include('agenda/nfl/teams.php');
+                    include('nfl/teams.php');
                 } elseif ($liga == "28") {
                     $link = "f1?ir";
                     $isMotor = 'style="display: none;"';
@@ -89,7 +89,7 @@
                     $link = "ufc/?ir";
                 } else {
                     $link = "futbol/liga?id=" . $liga;
-                    include('agenda/futbol/liga/teams.php');
+                    include('futbol/liga/teams.php');
                     $isMotor = "";
                     $motorText = "";
                 }
