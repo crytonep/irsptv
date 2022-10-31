@@ -11,6 +11,7 @@ if ($result['canal3'] === "star+") {
         <a
         href="'.$r.'"
         class="btn btn-lg btn-primary">
+        <i class="flag ar"></i>
             Star +
         </a>
     </div>
