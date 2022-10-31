@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/n57whzfm2yvo/public_html/
+    - /bin/cp -R iraffletv.nl/ $DEPLOYPATH
