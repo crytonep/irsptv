@@ -1,9 +1,8 @@
 <?php include('../../conn.php');
 include('../../inc/header.php');
 $getLiga = $_GET['id'];
-$ligas = mysqli_query($conn, "select * from agenda
-INNER JOIN ligas ON agenda.liga = ligas.ligaId
-where liga = '$getLiga' and status=1");
+$ligas = mysqli_query($conn, "select * from ligas
+where ligaId = '$getLiga'");
 $result = mysqli_fetch_array($ligas);
 ?>
 
@@ -16,6 +15,10 @@ $result = mysqli_fetch_array($ligas);
 <div id="juegos" class="container">
     <div class="row">
         <?php
+        $ligas = mysqli_query($conn, "select * from agenda
+        INNER JOIN ligas ON agenda.liga = ligas.ligaId
+        where liga = '$getLiga'
+        ORDER BY fecha asc");
         while ($result = mysqli_fetch_array($ligas)) {
             // Teams
             $local = $result['local'];
@@ -57,10 +60,11 @@ $result = mysqli_fetch_array($ligas);
                 </a>
                 <div class="collapse <?= $collapse ?>" id="juego<?= $result['id'] ?>">
                     <div class="card card-body lm-info-block gray-default">
-                        <ul class="list-group">
+                        <ul class="sub-menu">
                             <?php
                             // Canal 2
                             echo $canalop2;
+                            //echo $canal2;
                             // Canal 3
                             echo $canalop3;
                             // Canal 4
@@ -80,9 +84,8 @@ $result = mysqli_fetch_array($ligas);
                             } else {
                             ?>
                                 <div>
-                                    <a
-                                    href="../../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>"
-                                    class="btn btn-lg btn-primary">
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
                                         <?= $row['channelName'] ?>
                                     </a>
                                 </div>
@@ -100,9 +103,8 @@ $result = mysqli_fetch_array($ligas);
                             } else {
                             ?>
                                 <div>
-                                    <a
-                                    href="../../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>"
-                                    class="btn btn-lg btn-primary">
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
                                         <?= $row['channelName'] ?>
                                     </a>
                                 </div>
@@ -120,9 +122,8 @@ $result = mysqli_fetch_array($ligas);
                             } else {
                             ?>
                                 <div>
-                                    <a
-                                    href="../../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>"
-                                    class="btn btn-lg btn-primary">
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
                                         <?= $row['channelName'] ?>
                                     </a>
                                 </div>
