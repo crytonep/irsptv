@@ -3,10 +3,10 @@
     <div class="footer-social">
         <ul class="footer-social-links">
             <li>
-                <a href="#" target="_blank">Telegram</a>
+                <a href="https://t.me/+uyWDSC69RzFlNWE5" target="_blank">Telegram</a>
             </li>
             <li>
-                <a href="#" target="_blank">Conctacto</a>
+                <a href="mailto:contacto@iraffle.live" target="_blank">Conctacto</a>
             </li>
         </ul>
     </div>
