@@ -56,7 +56,7 @@
                                     <hr>
                                     <span class="lm-info-block-text"></span>
                                 </div>
-                                <a href="?c=<?= $result['channelId'] ?>" class="ajax-page-load"></a>
+                                <a href="?c=<?= $result['channelId'] ?>#player" class="ajax-page-load"></a>
                             </div>
 
                             <i class="fa fa-tv"></i>
