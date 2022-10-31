@@ -1,9 +1,8 @@
 <?php include('../../conn.php');
 include('../../inc/header.php');
 $getLiga = $_GET['id'];
-$ligas = mysqli_query($conn, "select * from agenda
-INNER JOIN ligas ON agenda.liga = ligas.ligaId
-where liga = '$getLiga' and status=1");
+$ligas = mysqli_query($conn, "select * from ligas
+where ligaId = '$getLiga'");
 $result = mysqli_fetch_array($ligas);
 ?>
 
@@ -16,6 +15,10 @@ $result = mysqli_fetch_array($ligas);
 <div id="juegos" class="container">
     <div class="row">
         <?php
+        $ligas = mysqli_query($conn, "select * from agenda
+        INNER JOIN ligas ON agenda.liga = ligas.ligaId
+        where liga = '$getLiga'
+        ORDER BY fecha asc");
         while ($result = mysqli_fetch_array($ligas)) {
             // Teams
             $local = $result['local'];
