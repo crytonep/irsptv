@@ -25,10 +25,10 @@
                 case 23 :
                     $link = "nba/?id=".$index;
                 break;
-                default : $link = "liga/id=".$index;
+                default : $link = "liga/?id=".$index;
             }
         ?>
-            <div class="<?=$ligaStatus?> col-xs-6 col-sm-6 col-md-3">
+            <div class="<?=$ligaStatus?> col-6 col-xs-6 col-sm-6 col-md-4">
                 <a href="<?= $link ?>">
                     <div class="client-block lm-info-block gray-default">
                         <img src="<?= $app ?>img/ligas/<?= $result['ligaImg'] ?>.png" alt="" srcset="">

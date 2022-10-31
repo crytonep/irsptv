@@ -24,7 +24,7 @@
                 $ligaStatus = "hidden";
             }
         ?>
-            <div class="<?=$ligaStatus?> col-xs-6 col-sm-6 col-md-3">
+            <div class="<?=$ligaStatus?> col-6 col-xs-12 col-sm-6 col-md-4">
                 <a href="liga/?id=<?= $result['ligaId'] ?>">
                     <div class="client-block lm-info-block gray-default">
                         <img src="<?= $app ?>img/ligas/<?= $result['ligaImg'] ?>.png" alt="" srcset="">
