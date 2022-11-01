@@ -3,22 +3,22 @@ $canal = $result['canal'];
 $canal2 = $result['canal2'];
 $canal3 = $result['canal3'];
 
-if ($result['canal3'] === "star+") {
-    $canalImg = "starplus";
-    $r = $app . "star.php";
-    $custom2 = '
-    <div>
-        <a
-        href="'.$r.'"
-        class="hidden btn btn-lg btn-primary">
-        <i class="flag ar"></i>
-            Star +
-        </a>
-    </div>
-    ';
-} else {
-    $custom2 = "";
-}
+// if ($result['canal3'] === "star+") {
+//     $canalImg = "starplus";
+//     $r = $app . "star.php";
+//     $custom2 = '
+//     <div>
+//         <a
+//         href="'.$r.'"
+//         class="hidden btn btn-lg btn-primary">
+//         <i class="flag ar"></i>
+//             Star +
+//         </a>
+//     </div>
+//     ';
+// } else {
+//     $custom2 = "";
+// }
 
 // Logos
 if ($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "golm") {
