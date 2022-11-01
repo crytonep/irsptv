@@ -38,7 +38,7 @@ playerInstance.setup({
             ],
         },
     ],
-    height: "100%",
+    height: "100vh",
     width: "100%",
     aspectratio: "16:9",
     stretching: "bestfit",
