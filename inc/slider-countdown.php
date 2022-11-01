@@ -42,14 +42,6 @@
                     ele.innerHTML = (days<?= $index ?> + "d " + hours<?= $index ?> + "h " +
                         minutes<?= $index ?> + "m " + seconds<?= $index ?> + "s")
                 }
-            } else if (hours<?= $index ?> == 0) {
-                for (const ele of document.getElementsByClassName("cntdwn-<?= $index ?>")) {
-                    ele.innerHTML = (minutes<?= $index ?> + "m " + seconds<?= $index ?> + "s")
-                }
-            } else if (minutes<?= $index ?> == 0) {
-                for (const ele of document.getElementsByClassName("cntdwn-<?= $index ?>")) {
-                    ele.innerHTML = (seconds<?= $index ?> + "s")
-                }
             } else {
                 for (const ele of document.getElementsByClassName("cntdwn-<?= $index ?>")) {
                     ele.innerHTML = (hours<?= $index ?> + "h " +
