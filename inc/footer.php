@@ -6,6 +6,9 @@
                 <a href="https://t.me/+uyWDSC69RzFlNWE5" target="_blank">Telegram</a>
             </li>
             <li>
+                <a href="https://chat.whatsapp.com/DZyOSVTT8xWBoGgNYTRF6j" target="_blank">WhatsApp</a>
+            </li>
+            <li>
                 <a href="mailto:contacto@iraffle.live" target="_blank">Conctacto</a>
             </li>
         </ul>
