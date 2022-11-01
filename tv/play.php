@@ -38,7 +38,11 @@ let key2 = "' . $key2 . '";
         <img src="<?=$app?>/img/player_img.png" alt="">
     </a>
     <div class="hidden" id="playerContainer">
-        <div id="player"></div>
+        <?php if($result['type'] == 11) {?>
+            <iframe width="100%" height="500px" src="ckm.php?c=<?=$result['channelId']?>" frameborder="0"></iframe>
+            <?php } else {?>
+            <div id="player"></div>
+        <?php }?>
     </div>
     <script src="<?= $app ?>js/player.js"></script>
     <div class="container" id="adBanner2">
