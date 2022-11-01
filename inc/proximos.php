@@ -94,7 +94,7 @@
                     $motorText = "";
                 }
     ?>
-                <div class="client-block">
+                <div class="eventito">
                     <a href="<?=$link?>" title="<?=$ligaName?>: <?=$local?> vs <?=$visita?> en Directo por iRaffle TV">
                         <div class="lm-info-block gray-default">
                             <div class="mini-league">

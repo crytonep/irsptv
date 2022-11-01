@@ -30,7 +30,7 @@
         ?>
             <div class="<?=$ligaStatus?> col-6 col-xs-6 col-sm-6 col-md-4">
                 <a href="<?= $link ?>">
-                    <div class="client-block lm-info-block gray-default">
+                    <div class="lm-info-block gray-default">
                         <img src="<?= $app ?>img/ligas/<?= $result['ligaImg'] ?>.png" alt="" srcset="">
                         <h4><?= $result['ligaName'] ?></h4>
                         <span class="lm-info-block-text"></span>
