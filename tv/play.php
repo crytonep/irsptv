@@ -39,9 +39,9 @@ let key2 = "' . $key2 . '";
     </a>
     <div class="hidden" id="playerContainer">
         <?php if($result['type'] == 11) {?>
-            <iframe width="100%" height="500px" src="ckm.php?c=<?=$result['channelId']?>" frameborder="0"></iframe>
+            <iframe width="100%" height="500px" src="ckm.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no"></iframe>
             <?php } else {?>
-            <div id="player"></div>
+                <iframe width="100%" height="500px" src="ck.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no"></iframe>
         <?php }?>
     </div>
     <script src="<?= $app ?>js/player.js"></script>
