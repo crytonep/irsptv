@@ -5,7 +5,7 @@
     var hh = '<?= $hh_1 ?>';
     var m = '<?= $m_1 ?>';
 
-    var textLive = "En Vivo";
+    var textLive = "<span class='live-text text-danger'> En Vivo</span>";
     var textEnd = "Finalizó";
 
 
