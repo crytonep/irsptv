@@ -44,7 +44,6 @@ let key2 = "' . $key2 . '";
                 <iframe width="100%" height="500px" src="ck.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no"></iframe>
         <?php }?>
     </div>
-    <script src="<?= $app ?>js/player.js"></script>
     <div class="container" id="adBanner2">
         <?php include('../inc/ads/banner2.php'); include('../inc/ads/popunder.php'); ?>
     </div>
