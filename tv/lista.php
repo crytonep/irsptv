@@ -41,7 +41,7 @@
                     $channels = mysqli_query($conn, "select * from channels
                     INNER JOIN categories ON channels.category = categories.categoryId
                     INNER JOIN countries ON channels.country = countries.countryId
-                    AND type IN ('9')");
+                    AND type IN ('9', '11')");
                     while ($result = mysqli_fetch_assoc($channels)) {
                     ?>
                         <!-- Elemento -->
