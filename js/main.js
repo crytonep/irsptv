@@ -29,7 +29,7 @@ function detectPC() {
 if (!detectPC()) {
     console.log('Es un PC');
 } else {
-    let redir = "//".location.hostname + "/iraffle/device.html"
+    //let redir = "//".location.hostname + "/iraffle/device.html"
     console.log('sucio dominio: ' + redir);
     //location.href = redir;
 }
