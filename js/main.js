@@ -8,7 +8,7 @@ function buscarCanales() {
     for (i = 0; i < cards.length; i++) {
         title = cards[i].querySelector(".canal-item .lm-canal h4");
         if (title.innerText.toUpperCase().indexOf(filter) > -1) {
-            cards[i].style.display = "algoclase";
+            cards[i].style.display = "";
             //cards[i].classList.add("active");
         } else {
             cards[i].style.display = "none";
@@ -49,7 +49,7 @@ setTimeout(() => {
     $("#playerFake").click(function () {
         console.log("Click en player fake");
         $("#playerContainer").removeClass('hidden');
-        $(this).remove();
+        $(this).slideUp();
     })
     // /Fake Player
 
