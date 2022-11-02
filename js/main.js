@@ -17,6 +17,25 @@ function buscarCanales() {
     }
 }
 
+// UserAgent
+function detectPC() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+if (!detectPC()) {
+    console.log('Es un PC');
+} else {
+    let redir = "//".location.hostname + "/iraffle/device.html"
+    console.log('sucio dominio: ' + redir);
+    //location.href = redir;
+}
+
+// Alerta
+
 setTimeout(() => {
     const alerta = document.getElementById('alertaDesarrollo');
     //alerta.style.display = 'none';
@@ -422,23 +441,6 @@ setTimeout(() => {
             }, 400);
             return false;
         });
-
-        // Detect PC
-        function detectPC() {
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                return false;
-            } else {
-                return true;
-            }
-        }
-
-        if (!detectPC()) {
-            console.log('Es un PC');
-        } else {
-            let redir = "//".location.hostname + "/iraffle/device.html"
-            console.log('sucio dominio: ' + redir);
-            //location.href = redir;
-        }
 
         scrollTop();
 
