@@ -1,7 +1,8 @@
 setTimeout(() => {
     const alerta = document.getElementById('alertaDesarrollo');
-    alerta.style.display = 'none';
-}, 10000);
+    //alerta.style.display = 'none';
+    $(alerta).slideUp();
+}, 5000);
 
 (function($) {
 "use strict";

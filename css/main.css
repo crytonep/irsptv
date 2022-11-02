@@ -2304,6 +2304,11 @@ ul.social-links li:last-child a {
   transition: all 0.2s ease-in-out;
 }
 
+.lm-canal {
+  min-height: 150px;
+  max-height: 150px;
+}
+
 .lm-info-block:hover {
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
