@@ -3,7 +3,7 @@
 if (isset($_GET['c'])) {
     include('play.php');
 } else {
-    include('lista.php');
+    include('lista2.php');
 }
 ?>
 <?php include('../inc/footer.php'); ?>

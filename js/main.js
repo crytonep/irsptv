@@ -1,18 +1,37 @@
+// Buscar Canales
+function buscarCanales() {
+    var input, filter, cards, cardContainer, h5, title, i;
+    input = document.getElementById("searchbox");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("canales");
+    cards = cardContainer.getElementsByClassName("canal-item");
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".canal-item .lm-canal h4");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "algoclase";
+            //cards[i].classList.add("active");
+        } else {
+            cards[i].style.display = "none";
+            cards[i].classList.remove("active");
+        }
+    }
+}
+
 setTimeout(() => {
     const alerta = document.getElementById('alertaDesarrollo');
     //alerta.style.display = 'none';
     $(alerta).slideUp();
 }, 5000);
 
-(function($) {
-"use strict";
+(function ($) {
+    "use strict";
     var body = $('body');
 
     function imageCarousel() {
-        $('.portfolio-page-carousel').each(function() {
+        $('.portfolio-page-carousel').each(function () {
             $(this).imagesLoaded(function () {
                 $('.portfolio-page-carousel').owlCarousel({
-                    smartSpeed:1200,
+                    smartSpeed: 1200,
                     items: 1,
                     loop: true,
                     dots: true,
@@ -25,103 +44,29 @@ setTimeout(() => {
         });
     }
 
-    $("#playerFake").click(function(){
+    // Fake Player
+
+    $("#playerFake").click(function () {
         console.log("Click en player fake");
         $("#playerContainer").removeClass('hidden');
         $(this).remove();
     })
+    // /Fake Player
 
-    // Ajax Pages loader
-//    function ajaxLoader() {
-//         // Check for hash value in URL
-//         var ajaxLoadedContent = $('#page-ajax-loaded');
-
-//         function showContent() {
-//             ajaxLoadedContent.removeClass('fadeOutLeft closed');
-//             ajaxLoadedContent.show();
-//             $('body').addClass('ajax-page-visible');
-//         }
-
-//         function hideContent() {
-//             $('#page-ajax-loaded').addClass('fadeOutLeft closed');
-//             $('body').removeClass('ajax-page-visible');
-//             setTimeout(function(){
-//                 $('#page-ajax-loaded.closed').html('');
-//                 ajaxLoadedContent.hide();
-//             }, 500);
-//         }
-
-//         var href = $('.ajax-page-load').each(function(){
-//             href = $(this).attr('href');
-//             if(location.hash == location.hash.split('/')[0] + '/' + href.substr(0,href.length-5)){
-//                 var toLoad =  $(this).attr('href');
-//                 showContent();
-//                 ajaxLoadedContent.load(toLoad);
-//                 return false;
-//             }
-//         });
-
-//         $(document)
-//             .on("click","#ajax-page-close-button", function (e) { // Hide Ajax Loaded Page on Navigation cleck and Close button
-//                 e.preventDefault();
-//                 hideContent();
-//                 location.hash = location.hash.split('/')[0];
-//             })
-//             .on("click",".ajax-page-load", function () { // Show Ajax Loaded Page
-//                 var hash = location.hash.split('/')[0] + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
-//                 location.hash = hash;
-//                 showContent();
-
-//                 return false;
-//             });
-//     }
-    // /Ajax Pages loader
-
-    // Contact form validator
-    $(function () {
-
-        $('#contact_form').validator();
-
-        $('#contact_form').on('submit', function (e) {
-            if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
-
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    data: $(this).serialize(),
-                    success: function (data)
-                    {
-                        var messageAlert = 'alert-' + data.type;
-                        var messageText = data.message;
-
-                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                        if (messageAlert && messageText) {
-                            $('#contact_form').find('.messages').html(alertBox);
-                            $('#contact_form')[0].reset();
-                        }
-                    }
-                });
-                return false;
-            }
-        });
-    });
-    // /Contact form validator
-
-    // Portfolio subpage filters
+    // Canales filters
     function portfolio_init() {
-        $( '.portfolio-content' ).each( function() {
+        $('.canales-content').each(function () {
             var portfolio_grid_container = $(this),
                 portfolio_grid_container_id = $(this).attr('id'),
-                portfolio_grid = $('#' + portfolio_grid_container_id + ' .portfolio-grid'),
-                portfolio_filter = $('#' + portfolio_grid_container_id + ' .portfolio-filters'),
-                portfolio_filter_item = $('#' + portfolio_grid_container_id + ' .portfolio-filters .filter');
-                
+                portfolio_grid = $('#' + portfolio_grid_container_id + ' .lista-canales'),
+                portfolio_filter = $('#' + portfolio_grid_container_id + ' .canales-filters'),
+                portfolio_filter_item = $('#' + portfolio_grid_container_id + ' .canales-filters .filter');
+
             if (portfolio_grid) {
 
                 portfolio_grid.shuffle({
                     speed: 450,
-                    itemSelector: 'figure'
+                    itemSelector: 'div'
                 });
 
                 $('.site-auto-menu').on("click", "a", function (e) {
@@ -133,13 +78,59 @@ setTimeout(() => {
                     e.preventDefault();
                     portfolio_filter_item.parent().removeClass('active');
                     $(this).parent().addClass('active');
-                    portfolio_grid.shuffle('shuffle', $(this).attr('data-group') );
+                    portfolio_grid.shuffle('shuffle', $(this).attr('data-group'));
                 });
 
             }
         })
     }
-    // /Portfolio subpage filters
+    // /Canales filters
+
+    // Ajax Pages loader
+       function ajaxLoader() {
+            // Check for hash value in URL
+            var ajaxLoadedContent = $('#page-ajax-loaded');
+
+            function showContent() {
+                ajaxLoadedContent.removeClass('fadeOutLeft closed');
+                ajaxLoadedContent.show();
+                $('body').addClass('ajax-page-visible');
+            }
+
+            function hideContent() {
+                $('#page-ajax-loaded').addClass('fadeOutLeft closed');
+                $('body').removeClass('ajax-page-visible');
+                setTimeout(function(){
+                    $('#page-ajax-loaded.closed').html('');
+                    ajaxLoadedContent.hide();
+                }, 500);
+            }
+
+            var href = $('.ajax-page-load').each(function(){
+                href = $(this).attr('href');
+                if(location.hash == location.hash.split('/')[0] + '/' + href.substr(0,href.length-5)){
+                    var toLoad =  $(this).attr('href');
+                    showContent();
+                    ajaxLoadedContent.load(toLoad);
+                    return false;
+                }
+            });
+
+            $(document)
+                .on("click","#ajax-page-close-button", function (e) { // Hide Ajax Loaded Page on Navigation cleck and Close button
+                    e.preventDefault();
+                    hideContent();
+                    location.hash = location.hash.split('/')[0];
+                })
+                .on("click",".ajax-page-load", function () { // Show Ajax Loaded Page
+                    var hash = location.hash.split('/')[0] + '/' + $(this).attr('href').substr(0,$(this).attr('href').length-5);
+                    location.hash = hash;
+                    showContent();
+
+                    return false;
+                });
+        }
+    // /Ajax Pages loader
 
     // Animate layout
     function animateLayout() {
@@ -156,7 +147,7 @@ setTimeout(() => {
         animatedContainer.addClass("animated " + animateType);
         $('.page-scroll').addClass('add-prespective');
         animatedContainer.addClass('transform3d');
-        setTimeout(function() {
+        setTimeout(function () {
             $('.page-scroll').removeClass('add-prespective');
             animatedContainer.removeClass('transform3d');
         }, 1000);
@@ -173,16 +164,16 @@ setTimeout(() => {
 
     function skillsStyles() {
         var custom_styles = "";
-        $( '.skill-container' ).each( function() {
+        $('.skill-container').each(function () {
             var value = $(this).attr('data-value');
 
-            if( value >= 101) {
+            if (value >= 101) {
                 value = '100';
             }
 
-            if( typeof value != 'undefined' ) {
+            if (typeof value != 'undefined') {
                 var id = $(this).attr('id'),
-                $custom_style = '#' + id + ' .skill-percentage { width: ' + value + '%; } ';
+                    $custom_style = '#' + id + ' .skill-percentage { width: ' + value + '%; } ';
                 custom_styles += $custom_style;
             }
         });
@@ -191,13 +182,13 @@ setTimeout(() => {
 
     //On Window load & Resize
     $(window)
-        .on('load', function() { //Load
+        .on('load', function () { //Load
             // Animation on Page Loading
-            $(".preloader").fadeOut( 800, "linear" );
+            $(".preloader").fadeOut(800, "linear");
             animateLayout();
         })
-        .on('hashchange', function(event) {
-            if(location.hash) {
+        .on('hashchange', function (event) {
+            if (location.hash) {
                 ajaxLoader();
             }
         });
@@ -208,7 +199,7 @@ setTimeout(() => {
         var movementStrength = 15;
         var height = movementStrength / $(document).height();
         var width = movementStrength / $(document).width();
-        $("body").on('mousemove', function(e){
+        $("body").on('mousemove', function (e) {
             var pageX = e.pageX - ($(document).width() / 2),
                 pageY = e.pageY - ($(document).height() / 2),
                 newvalueX = width * pageX * -1,
@@ -223,13 +214,13 @@ setTimeout(() => {
                 "background-position": "calc( 50% + " + newvalueX + "px ) calc( 50% + " + newvalueY + "px )",
             });
 
-            setTimeout(function() {
+            setTimeout(function () {
                 elements.removeClass('transition');
             }, 300);
         })
-        .scroll(function () {
-            scrollTop();
-        });
+            .scroll(function () {
+                scrollTop();
+            });
 
         // Initialize Portfolio grid
         var $portfolio_container = $(".portfolio-grid"),
@@ -249,8 +240,8 @@ setTimeout(() => {
         var $container = $(".blog-masonry");
         $container.imagesLoaded(function () {
             $container.masonry({
-              itemSelector: '.item',
-              resize: false
+                itemSelector: '.item',
+                resize: false
             });
         });
 
@@ -281,20 +272,20 @@ setTimeout(() => {
             loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
             navText: false,
             margin: 25,
-            responsive : {
+            responsive: {
                 // breakpoint from 0 up
-                0 : {
+                0: {
                     items: 1,
                 },
                 // breakpoint from 480 up
-                480 : {
+                480: {
                     items: 1,
                 },
                 // breakpoint from 768 up
-                768 : {
+                768: {
                     items: 2,
                 },
-                1200 : {
+                1200: {
                     items: 2,
                 }
             }
@@ -308,16 +299,16 @@ setTimeout(() => {
             navText: false,
             margin: 10,
             autoHeight: false,
-            responsive : {
+            responsive: {
                 // breakpoint from 0 up
-                0 : {
+                0: {
                     items: 2,
                 },
                 // breakpoint from 768 up
-                768 : {
+                768: {
                     items: 4,
                 },
-                1200 : {
+                1200: {
                     items: 6,
                 }
             }
@@ -342,31 +333,31 @@ setTimeout(() => {
             },
 
             iframe: {
-                markup: '<div class="mfp-iframe-scaler">'+
-                        '<div class="mfp-close"></div>'+
-                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                        '<div class="mfp-title mfp-bottom-iframe-title"></div>'+
-                      '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+                markup: '<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                    '<div class="mfp-title mfp-bottom-iframe-title"></div>' +
+                    '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
                 patterns: {
                     youtube: {
-                      index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+                        index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
-                      id: null, // String that splits URL in a two parts, second part should be %id%
-                      // Or null - full URL will be returned
-                      // Or a function that should return %id%, for example:
-                      // id: function(url) { return 'parsed id'; }
+                        id: null, // String that splits URL in a two parts, second part should be %id%
+                        // Or null - full URL will be returned
+                        // Or a function that should return %id%, for example:
+                        // id: function(url) { return 'parsed id'; }
 
-                      src: '%id%?autoplay=1' // URL that will be set as a source for iframe.
+                        src: '%id%?autoplay=1' // URL that will be set as a source for iframe.
                     },
                     vimeo: {
-                      index: 'vimeo.com/',
-                      id: '/',
-                      src: '//player.vimeo.com/video/%id%?autoplay=1'
+                        index: 'vimeo.com/',
+                        id: '/',
+                        src: '//player.vimeo.com/video/%id%?autoplay=1'
                     },
                     gmaps: {
-                      index: '//maps.google.',
-                      src: '%id%&output=embed'
+                        index: '//maps.google.',
+                        src: '%id%&output=embed'
                     }
                 },
 
@@ -374,8 +365,8 @@ setTimeout(() => {
             },
 
             callbacks: {
-                markupParse: function(template, values, item) {
-                 values.title = item.el.attr('title');
+                markupParse: function (template, values, item) {
+                    values.title = item.el.attr('title');
                 }
             },
         });
@@ -389,24 +380,24 @@ setTimeout(() => {
             },
         });
 
-        $('.portfolio-page-wrapper .portfolio-grid').each(function() {
+        $('.portfolio-page-wrapper .portfolio-grid').each(function () {
             $(this).magnificPopup({
                 delegate: 'a.gallery-lightbox',
                 type: 'image',
                 gallery: {
-                  enabled:true
+                    enabled: true
                 }
             });
         });
 
         $('.form-control').val('');
 
-        $(".form-control").on("focusin", function(){
+        $(".form-control").on("focusin", function () {
             $(this).parent('.form-group').addClass('form-group-focus');
         });
 
-        $(".form-control").on("focusout", function(){
-            if($(this).val().length === 0) {
+        $(".form-control").on("focusout", function () {
+            if ($(this).val().length === 0) {
                 $(this).parent('.form-group').removeClass('form-group-focus');
             }
         });
@@ -430,28 +421,20 @@ setTimeout(() => {
 
         // Detect PC
         function detectPC() {
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 return false;
             } else {
                 return true;
             }
         }
-        
-        if (!detectPC()){
-        console.log('Es un PC');
+
+        if (!detectPC()) {
+            console.log('Es un PC');
         } else {
-            let redir = "//" . location.hostname + "/iraffle/device.html"
+            let redir = "//".location.hostname + "/iraffle/device.html"
             console.log('sucio dominio: ' + redir);
             //location.href = redir;
         }
-
-        //Google Maps
-        $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
-        });
-        $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
-        });
 
         scrollTop();
 
