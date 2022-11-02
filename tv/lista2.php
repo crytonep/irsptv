@@ -4,7 +4,7 @@
     </div>
     <input type="text" name="searchbox" id="searchbox" class="filterinput form-control" placeholder="Buscar canales por nombre" onkeyup="buscarCanales()">
 </div>
-<div id="canales_content_q" class="canales-content">
+<div id="canales_content_q" class="canales-content container">
     <!-- Categorías -->
     <ul class="portfolio-filters canales-filters ">
         <li class="active">
@@ -30,7 +30,7 @@
         <?php } ?>
     </ul>
     <!-- *Categorías -->
-    <div id="canales" class="lista-canales row container">
+    <div id="canales" class="lista-canales row">
         <?php
         $channels = mysqli_query($conn, "select * from channels
         INNER JOIN categories ON channels.category = categories.categoryId
