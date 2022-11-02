@@ -30,7 +30,7 @@
         <?php } ?>
     </ul>
     <!-- *Categorías -->
-    <div id="canales" class="lista-canales row">
+    <div id="canales" class="lista-canales row container">
         <?php
         $channels = mysqli_query($conn, "select * from channels
         INNER JOIN categories ON channels.category = categories.categoryId
