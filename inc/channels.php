@@ -637,7 +637,7 @@ if ($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1" || $canal === "
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=560">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=560">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -652,7 +652,7 @@ if ($canal === "DAZN" || $canal === "DAZN" || $canal === "dazn1" || $canal === "
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=560">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=560">
         <i class="flag es"></i>
         DAZN 1 | VIP HD
         </a>
@@ -663,7 +663,7 @@ if ($canal === "DAZN2" || $canal === "DAZN 2 (Movistar 65)" || $canal === "dazn2
     $canalImg = "dazn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=569">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=569">
         <i class="flag es"></i>
         DAZN 2 | HD
         </a>
@@ -678,7 +678,7 @@ if ($canal === "DAZN2" || $canal === "DAZN 2 (Movistar 65)" || $canal === "dazn2
     $canalImg = "dazn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=569">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=569">
         <i class="flag es"></i>
         DAZN 2
         </a>
@@ -715,7 +715,7 @@ if ($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlali
     $canalImg = "daznlaliga";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=559">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=559">
         <i class="flag es"></i>
         DAZN LaLiga | HD
         </a>
@@ -730,7 +730,7 @@ if ($canal === "DAZN LaLiga" || $canal === "DAZN LaLiga" || $canal === "daznlali
     $canalImg = "daznlaliga";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=559">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=559">
         <i class="flag es"></i>
         DAZN LaLiga | HD
         </a>
@@ -755,7 +755,7 @@ if ($canal === "DAZN LaLiga 2" || $canal === "DAZN LaLiga 2" || $canal === "dazn
     $canalImg = "daznlaliga";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=daznlaliga2">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=daznlaliga2">
         <i class="flag es"></i>
         DAZN LaLiga 2 | HD
         </a>
@@ -766,7 +766,7 @@ if ($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)") {
     $canalImg = "dazn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=560">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=560">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
@@ -781,7 +781,7 @@ if ($canal === "DAZN (Regístrate)" || $canal === "DAZN | (Movistar 59)") {
     $canalImg = "dazn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=560">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=560">
         <i class="flag es"></i>
         DAZN 1 | HD
         </a>
@@ -864,7 +864,7 @@ if ($canal === "directv1" || $canal === "directv1") {
     $canalImg = "directv";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=561">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=561">
         <i class="flag ar"></i>
         DirecTV Sports | HD
         </a>
@@ -873,7 +873,7 @@ if ($canal === "directv1" || $canal === "directv1") {
     $canalImg = "directv";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=561">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=561">
         <i class="flag ar"></i>
         DirecTV Sports | HD
         </a>
@@ -884,7 +884,7 @@ if ($canal === "directv2" || $canal === "directv2") {
     $canalImg = "directv";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=562">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=562">
         <i class="flag ar"></i>
         DirecTV Sports 2 | HD
         </a>
@@ -893,7 +893,7 @@ if ($canal === "directv2" || $canal === "directv2") {
     $canalImg = "directv";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=562">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=562">
         <i class="flag ar"></i>
         DirecTV Sports 2 | HD
         </a>
@@ -924,7 +924,7 @@ if ($canal === "La 1 TVE" || $canal === "La 1 TVE") {
     $canalImg = "la1";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=93">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=93">
         <i class="flag es"></i>
         La 1 | HD
         </a>
@@ -933,13 +933,13 @@ if ($canal === "La 1 TVE" || $canal === "La 1 TVE") {
     $canalImg = "la1";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=93">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=93">
         <i class="flag es"></i>
         La 1 [OP1] | HD
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=310">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=310">
         <i class="flag es"></i>
         La 1 [OP2] | HD
         </a>
@@ -950,7 +950,7 @@ if ($canal === "espnsur" || $canal === "espnsur") {
     $canalImg = "espn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=1">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=1">
         <i class="flag ar"></i>
         ESPN Sur | HD
         </a>
@@ -959,7 +959,7 @@ if ($canal === "espnsur" || $canal === "espnsur") {
     $canalImg = "espn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=1">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=1">
         <i class="flag ar"></i>
         ESPN Sur | HD
         </a>
@@ -970,7 +970,7 @@ if ($canal === "espn2sur" || $canal === "espn2sur") {
     $canalImg = "espn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=2">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=2">
         <i class="flag ar"></i>
         ESPN 2 Sur | HD
         </a>
@@ -979,7 +979,7 @@ if ($canal === "espn2sur" || $canal === "espn2sur") {
     $canalImg = "espn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=2">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=2">
         <i class="flag ar"></i>
         ESPN 2 Sur | HD
         </a>
@@ -990,7 +990,7 @@ if ($canal === "espn3sur" || $canal === "espn3sur") {
     $canalImg = "espn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=3">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=3">
         <i class="flag ar"></i>
         ESPN 3 Sur | HD
         </a>
@@ -999,7 +999,7 @@ if ($canal === "espn3sur" || $canal === "espn3sur") {
     $canalImg = "espn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=3">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=3">
         <i class="flag ar"></i>
         ESPN 3 Sur | HD
         </a>
@@ -1030,7 +1030,7 @@ if ($canal === "espnextra" || $canal === "espnextra") {
     $canalImg = "espn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=4">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=4">
         <i class="flag ar"></i>
         ESPN Extra | HD
         </a>
@@ -1039,7 +1039,7 @@ if ($canal === "espnextra" || $canal === "espnextra") {
     $canalImg = "espn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=4">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=4">
         <i class="flag ar"></i>
         ESPN Extra | HD
         </a>
@@ -1050,7 +1050,7 @@ if ($canal === "espnmx" || $canal === "espnmx") {
     $canalImg = "espn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=564">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=564">
         <i class="flag mx"></i>
         ESPN | HD
         </a>
@@ -1059,7 +1059,7 @@ if ($canal === "espnmx" || $canal === "espnmx") {
     $canalImg = "espn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=564">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=564">
         <i class="flag mx"></i>
         ESPN | HD
         </a>
@@ -1070,7 +1070,7 @@ if ($canal === "espn2mx" || $canal === "espn2mx") {
     $canalImg = "espn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=583">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=583">
         <i class="flag mx"></i>
         ESPN 2 | HD
         </a>
@@ -1079,7 +1079,7 @@ if ($canal === "espn2mx" || $canal === "espn2mx") {
     $canalImg = "espn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=583">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=583">
         <i class="flag mx"></i>
         ESPN 2 | HD
         </a>
@@ -1090,7 +1090,7 @@ if ($canal === "espndep" || $canal === "espndep") {
     $canalImg = "espn";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=609">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=609">
         <i class="flag mx"></i>
         ESPN Deportes | HD
         </a>
@@ -1099,7 +1099,7 @@ if ($canal === "espndep" || $canal === "espndep") {
     $canalImg = "espn";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=609">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=609">
         <i class="flag mx"></i>
         ESPN Deportes | HD
         </a>
@@ -1110,7 +1110,7 @@ if ($canal === "foxsportssur" || $canal === "foxsportssur") {
     $canalImg = "foxsports";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=5">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=5">
         <i class="flag ar"></i>
         FOX Sports | HD
         </a>
@@ -1119,7 +1119,7 @@ if ($canal === "foxsportssur" || $canal === "foxsportssur") {
     $canalImg = "foxsports";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=5">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=5">
         <i class="flag ar"></i>
         FOX Sports | HD
         </a>
@@ -1130,7 +1130,7 @@ if ($canal === "foxsports2sur" || $canal === "foxsports2sur") {
     $canalImg = "foxsports";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=6">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=6">
         <i class="flag ar"></i>
         FOX Sports 2 | HD
         </a>
@@ -1139,7 +1139,7 @@ if ($canal === "foxsports2sur" || $canal === "foxsports2sur") {
     $canalImg = "foxsports";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=6">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=6">
         <i class="flag ar"></i>
         FOX Sports 2 | HD
         </a>
@@ -1150,7 +1150,7 @@ if ($canal === "foxsports3sur" || $canal === "foxsports3sur") {
     $canalImg = "foxsports";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=7">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=7">
         <i class="flag ar"></i>
         FOX Sports 3 | HD
         </a>
@@ -1159,7 +1159,7 @@ if ($canal === "foxsports3sur" || $canal === "foxsports3sur") {
     $canalImg = "foxsports";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=7">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=7">
         <i class="flag ar"></i>
         FOX Sports 3 | HD
         </a>
@@ -1170,7 +1170,7 @@ if ($canal === "foxsportsmx" || $canal === "foxsportsmx") {
     $canalImg = "foxsports";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=565">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=565">
         <i class="flag mx"></i>
         Fox Sports | HD
         </a>
@@ -1179,7 +1179,7 @@ if ($canal === "foxsportsmx" || $canal === "foxsportsmx") {
     $canalImg = "foxsports";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=564">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=564">
         <i class="flag mx"></i>
         Fox Sports | HD
         </a>
@@ -1190,7 +1190,7 @@ if ($canal === "foxsport3smx" || $canal === "foxsports3mx") {
     $canalImg = "foxsports";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=566">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=566">
         <i class="flag mx"></i>
         Fox Sports 3 | HD
         </a>
@@ -1199,7 +1199,7 @@ if ($canal === "foxsport3smx" || $canal === "foxsports3mx") {
     $canalImg = "foxsports";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . '/tv/epg/?futbol&id=' . $index . '&c=566">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=566">
         <i class="flag mx"></i>
         Fox Sports 3 | HD
         </a>
@@ -1250,7 +1250,7 @@ if ($canal === "tyc" || $canal === "tyc") {
     $canalImg = "tycsports";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=257">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=257">
         <i class="flag ar"></i>
         TyC Sports | HD
         </a>
@@ -1259,7 +1259,7 @@ if ($canal === "tyc" || $canal === "tyc") {
     $canalImg = "tycsports";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=257">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=257">
         <i class="flag ar"></i>
         TyC Sports | HD
         </a>
@@ -1270,7 +1270,7 @@ if ($canal === "winplus" || $canal === "winplus") {
     $canalImg = "winsports";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=279">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=279">
         <i class="flag co"></i>
         Win Sports + | HD
         </a>
@@ -1279,7 +1279,7 @@ if ($canal === "winplus" || $canal === "winplus") {
     $canalImg = "winsports";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=279">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=279">
         <i class="flag co"></i>
         Win Sports + | HD
         </a>
@@ -1290,7 +1290,7 @@ if ($canal === "Teledeporte" || $canal === "Teledeporte") {
     $canalImg = "tdp";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=279">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=279">
         <i class="flag es"></i>
         Teledeporte | HD
         </a>
@@ -1299,7 +1299,7 @@ if ($canal === "Teledeporte" || $canal === "Teledeporte") {
     $canalImg = "tdp";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=279">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=279">
         <i class="flag es"></i>
         Teledeporte | HD
         </a>
@@ -1310,7 +1310,7 @@ if ($canal === "Esport3" || $canal === "Esport3 (Cataluña)") {
     $canalImg = "e3";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=253">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=253">
         <i class="flag es"></i>
         Esport3 | HD
         </a>
@@ -1319,7 +1319,7 @@ if ($canal === "Esport3" || $canal === "Esport3 (Cataluña)") {
     $canalImg = "e3";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=253">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=253">
         <i class="flag es"></i>
         Esport3 | HD
         </a>
@@ -1330,7 +1330,7 @@ if ($canal === "Aragón Deporte" || $canal === "AragÃ³n Deporte") {
     $canalImg = "aragontv";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=118">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=118">
         <i class="flag es"></i>
         Aragón Deporte | HD
         </a>
@@ -1339,7 +1339,7 @@ if ($canal === "Aragón Deporte" || $canal === "AragÃ³n Deporte") {
     $canalImg = "aragontv";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=119">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=119">
         <i class="flag es"></i>
         CMM Play (Castilla - LM) | HD
         </a>
@@ -1350,7 +1350,7 @@ if ($canal === "CMMPlay (Castilla-LM)" || $canal === "CMMPlay (Castilla-LM)") {
     $canalImg = "cmm";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=119">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=119">
         <i class="flag es"></i>
         CMM Play (Castilla - LM) | HD
         </a>
@@ -1359,7 +1359,7 @@ if ($canal === "CMMPlay (Castilla-LM)" || $canal === "CMMPlay (Castilla-LM)") {
     $canalImg = "cmm";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=119">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=119">
         <i class="flag es"></i>
         CMM Play (Castilla - LM) | HD
         </a>
@@ -1370,7 +1370,7 @@ if ($canal === "ZDF (M+ Astra)" || $canal === "ZDF (M+ Astra)") {
     $canalImg = "zdf";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=232">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=232">
         <i class="flag de"></i>
         ZDF | HD
         </a>
@@ -1379,7 +1379,7 @@ if ($canal === "ZDF (M+ Astra)" || $canal === "ZDF (M+ Astra)") {
     $canalImg = "zdf";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=232">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=232">
         <i class="flag de"></i>
         ZDF | HD
         </a>
