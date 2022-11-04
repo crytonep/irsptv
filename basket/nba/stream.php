@@ -3,8 +3,6 @@ $c = ucfirst($_GET['c']);
 $g = $_GET['g'];
 $c2 = ucfirst($_GET['c2']);
 $g2 = $_GET['g2'];
-$index = $_GET['id'];
-$liga = $result['ligaImg'];
 
 // Opcion Adicional
 if ($result['canal3'] === "star+") {
