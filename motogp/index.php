@@ -77,7 +77,7 @@ $result = mysqli_fetch_array($ligas);
                             } else {
                             ?>
                                 <div>
-                                    <a class="btn btn-lg btn-primary" href="../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                    <a class="btn btn-lg btn-primary" href="../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
                                         <i class="flag <?= $row['countryImg'] ?>"></i>
                                         <?= $row['channelName'] ?>
                                     </a>
@@ -96,7 +96,7 @@ $result = mysqli_fetch_array($ligas);
                             } else {
                             ?>
                                 <div>
-                                    <a class="btn btn-lg btn-primary" href="../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                    <a class="btn btn-lg btn-primary" href="../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
                                         <i class="flag <?= $row['countryImg'] ?>"></i>
                                         <?= $row['channelName'] ?>
                                     </a>
@@ -115,7 +115,7 @@ $result = mysqli_fetch_array($ligas);
                             } else {
                             ?>
                                 <div>
-                                    <a class="btn btn-lg btn-primary" href="../tv/?id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                    <a class="btn btn-lg btn-primary" href="../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
                                         <i class="flag <?= $row['countryImg'] ?>"></i>
                                         <?= $row['channelName'] ?>
                                     </a>

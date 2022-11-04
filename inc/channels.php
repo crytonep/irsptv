@@ -70,7 +70,7 @@ if ($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=721">
         <i class="flag es"></i>
         Movistar Liga de Campeones | HD
         </a>
@@ -91,7 +91,7 @@ if ($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=721">
         <i class="flag es"></i>
         Movistar Liga de Campeones | HD
         </a>
@@ -108,7 +108,7 @@ if ($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMyLnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=723">
         <i class="flag es"></i>
         Movistar Liga de Campeones 2 | HD
         </a>
@@ -123,7 +123,7 @@ if ($canal === "M+ Liga de Campeones 2" || $canal === "mlcamp2") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMyLnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=723">
         <i class="flag es"></i>
         Movistar Liga de Campeones 2 | HD
         </a>
@@ -140,7 +140,7 @@ if ($canal === "M+ Liga de Campeones 3" || $canal === "mlcamp3") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMzLnBocA==">
+        <a class="btn btn-lg btn-primary" href=""' . $app . 'tv/?futbol&id=' . $index . '&c=778">
         <i class="flag es"></i>
         Movistar Liga de Campeones 3 | HD
         </a>
@@ -155,7 +155,7 @@ if ($canal === "M+ Liga de Campeones 3" || $canal === "mlcamp3") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMzLnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=778">
         <i class="flag es"></i>
         Movistar Liga de Campeones 3 | HD
         </a>
@@ -173,7 +173,7 @@ if ($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM0LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=779">
         <i class="flag es"></i>
         Movistar Liga de Campeones 4 | HD
         </a>
@@ -188,7 +188,7 @@ if ($canal === "M+ Liga de Campeones 4" || $canal === "mlcamp4") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM0LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=779">
         <i class="flag es"></i>
         Movistar Liga de Campeones 4 | HD
         </a>
@@ -205,7 +205,7 @@ if ($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM1LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=780">
         <i class="flag es"></i>
         Movistar Liga de Campeones 5 | HD
         </a>
@@ -220,7 +220,7 @@ if ($canal === "M+ Liga de Campeones 5" || $canal === "mlcamp5") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM1LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=780">
         <i class="flag es"></i>
         Movistar Liga de Campeones 5 | HD
         </a>
@@ -231,7 +231,7 @@ if ($canal === "M+ Liga de Campeones 6" || $canal === "mlcamp6") {
     $canalImg = "campeones";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=781">
         <i class="flag es"></i>
         Movistar Liga de Campeones 6 | HD
         </a>
@@ -240,7 +240,7 @@ if ($canal === "M+ Liga de Campeones 6" || $canal === "mlcamp6") {
     $canalImg = "campeones";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMucGhw">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=781">
         <i class="flag es"></i>
         Movistar Liga de Campeones 6 | HD
         </a>
@@ -251,7 +251,7 @@ if ($canal === "M+ Liga de Campeones 7" || $canal === "mlcamp7") {
     $canalImg = "campeones";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM3LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=782">
         <i class="flag es"></i>
         Movistar Liga de Campeones 7 | HD
         </a>
@@ -260,7 +260,7 @@ if ($canal === "M+ Liga de Campeones 7" || $canal === "mlcamp7") {
     $canalImg = "campeones";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM3LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=782">
         <i class="flag es"></i>
         Movistar Liga de Campeones 7 | HD
         </a>
@@ -271,7 +271,7 @@ if ($canal === "M+ Liga de Campeones 8" || $canal === "mlcamp8") {
     $canalImg = "campeones";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM4LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=783">
         <i class="flag es"></i>
         Movistar Liga de Campeones 8 | HD
         </a>
@@ -280,7 +280,7 @@ if ($canal === "M+ Liga de Campeones 8" || $canal === "mlcamp8") {
     $canalImg = "campeones";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM4LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=783">
         <i class="flag es"></i>
         Movistar Liga de Campeones 8 | HD
         </a>
@@ -291,7 +291,7 @@ if ($canal === "M+ Liga de Campeones 9" || $canal === "mlcamp9") {
     $canalImg = "campeones";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM5LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=784">
         <i class="flag es"></i>
         Movistar Liga de Campeones 9 | HD
         </a>
@@ -300,7 +300,7 @@ if ($canal === "M+ Liga de Campeones 9" || $canal === "mlcamp9") {
     $canalImg = "campeones";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXM5LnBocA==">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=784">
         <i class="flag es"></i>
         Movistar Liga de Campeones 9 | HD
         </a>
@@ -311,7 +311,7 @@ if ($canal === "M+ Liga de Campeones 10" || $canal === "mlcamp10") {
     $canalImg = "campeones";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMC5waHA=">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=785">
         <i class="flag es"></i>
         Movistar Liga de Campeones 10 | HD
         </a>
@@ -320,7 +320,7 @@ if ($canal === "M+ Liga de Campeones 10" || $canal === "mlcamp10") {
     $canalImg = "campeones";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMC5waHA=">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=785">
         <i class="flag es"></i>
         Movistar Liga de Campeones 10 | HD
         </a>
@@ -331,7 +331,7 @@ if ($canal === "M+ Liga de Campeones 11" || $canal === "mlcamp11") {
     $canalImg = "campeones";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMS5waHA=">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=786">
         <i class="flag es"></i>
         Movistar Liga de Campeones 11 | HD
         </a>
@@ -340,7 +340,7 @@ if ($canal === "M+ Liga de Campeones 11" || $canal === "mlcamp11") {
     $canalImg = "campeones";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMS5waHA=">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=786">
         <i class="flag es"></i>
         Movistar Liga de Campeones 11 | HD
         </a>
@@ -351,7 +351,7 @@ if ($canal === "M+ Liga de Campeones 12" || $canal === "mlcamp12") {
     $canalImg = "campeones";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMi5waHA=">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=787">
         <i class="flag es"></i>
         Movistar Liga de Campeones 12 | HD
         </a>
@@ -360,7 +360,7 @@ if ($canal === "M+ Liga de Campeones 12" || $canal === "mlcamp12") {
     $canalImg = "campeones";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21saWdhZGVjYW1wZW9uZXMxMi5waHA=">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=787">
         <i class="flag es"></i>
         Movistar Liga de Campeones 12 | HD
         </a>
@@ -403,7 +403,7 @@ if ($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21sYWxpZ2EucGhw">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=717">
         <i class="flag es"></i>
         Movistar LaLiga | HD
         </a>
@@ -424,7 +424,7 @@ if ($canal === "M+ LaLiga" || $canal === "M+ LaLigaTV" || $canal === "bar") {
         </a>
     </div>
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21sYWxpZ2EucGhw">
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=717">
         <i class="flag es"></i>
         Movistar LaLiga | HD
         </a>
@@ -439,6 +439,12 @@ if ($canal === "M+ LaLiga 1" || $canal === "mlaliga1") {
         <i class="flag es"></i>
         Movistar LaLiga 1 | VIP HD
         </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=718">
+        <i class="flag es"></i>
+        Movistar LaLiga 1 | HD
+        </a>
     </div>';
 } elseif ($canal2 === "M+ LaLiga 1" || $canal2 === "mlaliga1") {
     $canalImg = "mlaliga";
@@ -448,6 +454,12 @@ if ($canal === "M+ LaLiga 1" || $canal === "mlaliga1") {
         <i class="flag es"></i>
         Movistar LaLiga 1 | VIP HD
         </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=718">
+        <i class="flag es"></i>
+        Movistar LaLiga 1 | HD
+        </a>
     </div>';
 }
 
@@ -455,30 +467,30 @@ if ($canal === "M+ LaLiga 2" || $canal === "mlaliga2") {
     $canalImg = "mlaliga";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21sYWxpZ2EyLnBocA==">
-        <i class="flag es"></i>
-        Movistar LaLiga 2 | HD
-        </a>
-    </div>
-    <div>
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=mlaliga2">
         <i class="flag es"></i>
         Movistar LaLiga 2 | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=719">
+        <i class="flag es"></i>
+        Movistar LaLiga 2 | HD
         </a>
     </div>';
 } elseif ($canal2 === "M+ LaLiga 2" || $canal2 === "mlaliga2") {
     $canalImg = "mlaliga";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL21sYWxpZ2EyLnBocA==">
-        <i class="flag es"></i>
-        Movistar LaLiga 2 | HD
-        </a>
-    </div>
-    <div>
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=mlaliga2">
         <i class="flag es"></i>
         Movistar LaLiga 2 | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=719">
+        <i class="flag es"></i>
+        Movistar LaLiga 2 | HD
         </a>
     </div>';
 }
@@ -491,6 +503,12 @@ if ($canal === "M+ LaLiga 3" || $canal === "mlaliga3") {
         <i class="flag es"></i>
         Movistar LaLiga 3 | VIP HD
         </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=720">
+        <i class="flag es"></i>
+        Movistar LaLiga 3 | HD
+        </a>
     </div>';
 } elseif ($canal2 === "M+ LaLiga 3" || $canal2 === "mlaliga3") {
     $canalImg = "mlaliga";
@@ -499,6 +517,52 @@ if ($canal === "M+ LaLiga 3" || $canal === "mlaliga3") {
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=mlaliga3">
         <i class="flag es"></i>
         Movistar LaLiga 3 | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=720">
+        <i class="flag es"></i>
+        Movistar LaLiga 3 | HD
+        </a>
+    </div>';
+}
+
+if ($canal === "M+ LaLiga 4" || $canal === "mlaliga4") {
+    $canalImg = "mlaliga";
+    $canalop2 = '
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=774">
+        <i class="flag es"></i>
+        Movistar LaLiga 4 | HD
+        </a>
+    </div>';
+} elseif ($canal2 === "M+ LaLiga 4" || $canal2 === "mlaliga4") {
+    $canalImg = "mlaliga";
+    $canalop4 = '
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=774">
+        <i class="flag es"></i>
+        Movistar LaLiga 4 | HD
+        </a>
+    </div>';
+}
+
+if ($canal === "M+ LaLiga 5" || $canal === "mlaliga5") {
+    $canalImg = "mlaliga";
+    $canalop2 = '
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=775">
+        <i class="flag es"></i>
+        Movistar LaLiga 5 | HD
+        </a>
+    </div>';
+} elseif ($canal2 === "M+ LaLiga 5" || $canal2 === "mlaliga5") {
+    $canalImg = "mlaliga";
+    $canalop4 = '
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=775">
+        <i class="flag es"></i>
+        Movistar LaLiga 5 | HD
         </a>
     </div>';
 }
@@ -531,6 +595,12 @@ if ($canal === "M+ Deportes" || $canal === "mdep") {
         <i class="flag es"></i>
         Movistar Deportes | VIP HD
         </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=724">
+        <i class="flag es"></i>
+        Movistar Deportes | HD
+        </a>
     </div>';
 } elseif ($canal2 === "M+ Deportes" || $canal2 === "mdep") {
     $canalImg = "movistar";
@@ -539,6 +609,12 @@ if ($canal === "M+ Deportes" || $canal === "mdep") {
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=mdep">
         <i class="flag es"></i>
         Movistar Deportes | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=724">
+        <i class="flag es"></i>
+        Movistar Deportes | HD
         </a>
     </div>';
 }
@@ -551,6 +627,12 @@ if ($canal === "M+ Deportes 2" || $canal === "mdep2") {
         <i class="flag es"></i>
         Movistar Deportes 2 | VIP HD
         </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=726">
+        <i class="flag es"></i>
+        Movistar Deportes 2 | HD
+        </a>
     </div>';
 } elseif ($canal2 === "M+ Deportes 2" || $canal2 === "mdep2") {
     $canalImg = "movistar";
@@ -560,6 +642,12 @@ if ($canal === "M+ Deportes 2" || $canal === "mdep2") {
         <i class="flag es"></i>
         Movistar Deportes 2 | VIP HD
         </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=726">
+        <i class="flag es"></i>
+        Movistar Deportes 2 | HD
+        </a>
     </div>';
 }
 
@@ -567,30 +655,30 @@ if ($canal === "M+ #Vamos" || $canal === "M+ #Vamos Bar 2 (305)" || $canal === "
     $canalImg = "mvamos";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL3ZhbW9zLnBocA==">
-        <i class="flag es"></i>
-        Movistar #Vamos | HD
-        </a>
-    </div>
-    <div>
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=mvamos">
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=680">
+        <i class="flag es"></i>
+        Movistar #Vamos | HD
         </a>
     </div>';
 } elseif ($canal2 === "M+ #Vamos" || $canal2 === "M+ #Vamos Bar 2 (305)" || $canal2 === "mvamos") {
     $canalImg = "mvamos";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megadeportes.live/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL3ZhbW9zLnBocA==">
-        <i class="flag es"></i>
-        Movistar #Vamos | HD
-        </a>
-    </div>
-    <div>
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=mvamos">
         <i class="flag es"></i>
         Movistar #Vamos | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=680">
+        <i class="flag es"></i>
+        Movistar #Vamos | HD
         </a>
     </div>';
 }
@@ -599,30 +687,30 @@ if ($canal === "GOL" || $canal === "GOL (Síguelo en directo)" || $canal === "go
     $canalImg = "goles";
     $canalop2 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL2dvbC5waHA=">
-        <i class="flag es"></i>
-        GOL | HD
-        </a>
-    </div>
-    <div>
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=goles">
         <i class="flag es"></i>
         GOL | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=734">
+        <i class="flag es"></i>
+        GOL | HD
         </a>
     </div>';
 } elseif ($canal2 === "GOL" || $canal2 === "goles") {
     $canalImg = "goles";
     $canalop4 = '
     <div>
-        <a class="btn btn-lg btn-primary" href="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL2VzL2dvbC5waHA=">
-        <i class="flag es"></i>
-        GOL | HD
-        </a>
-    </div>
-    <div>
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=goles">
         <i class="flag es"></i>
         GOL | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=734">
+        <i class="flag es"></i>
+        GOL | HD
         </a>
     </div>';
 }
@@ -1286,7 +1374,7 @@ if ($canal === "winplus" || $canal === "winplus") {
     </div>';
 }
 
-if ($canal === "Teledeporte" || $canal === "Teledeporte") {
+if ($canal === "Teledeporte" || $canal === "tdp") {
     $canalImg = "tdp";
     $canalop2 = '
     <div>
@@ -1294,12 +1382,24 @@ if ($canal === "Teledeporte" || $canal === "Teledeporte") {
         <i class="flag es"></i>
         Teledeporte | HD
         </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=735">
+        <i class="flag es"></i>
+        Teledeporte | HD
+        </a>
     </div>';
-} elseif ($canal2 === "Teledeporte" || $canal2 === "Teledeporte") {
+} elseif ($canal2 === "Teledeporte" || $canal2 === "tdp") {
     $canalImg = "tdp";
     $canalop4 = '
     <div>
         <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=279">
+        <i class="flag es"></i>
+        Teledeporte | HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play/?epg&futbol&id=' . $index . '&c=735">
         <i class="flag es"></i>
         Teledeporte | HD
         </a>

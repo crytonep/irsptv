@@ -107,8 +107,8 @@
                                         <img class="image" src="<?=$app?>img/equipos/<?=$ligaImg?>/<?=$localImg?>.png" alt="" srcset="">
                                     </div>
                                     <h6 <?=$isMotor?> class="vs">vs</h6>
-                                    <div class="team">
-                                        <img class="image" src="<?=$app?>img/equipos/<?=$ligaImg?>/<?=$visitaImg?>.png" alt="" srcset="">
+                                    <div class="<?=$isMotor?> team">
+                                        <img class="image <?=$isMotor?>" src="<?=$app?>img/equipos/<?=$ligaImg?>/<?=$visitaImg?>.png" alt="" srcset="">
                                     </div>
                                 </div>
                             </div>

@@ -26,9 +26,13 @@ function detectPC() {
     }
 }
 
-if (detectPC()) {
+if (!detectPC()) {
     console.log('Es un PC');
 } else {
+    var promoApp = document.getElementById('promo-app');
+    alertContent = "<a href='//eduveel19.github.io/app/assets/irsp2.1.apk'><div id='alertaPromo' onclick='redirApp' class='alert alert-secondary alert-dismissible fade show' role='alert'> <i class='fas fa-mobile faa-tada animated'></i> ¡Descarga nuestra app para tener una mejor experiencia! </div> </a>";
+    promoApp.innerHTML = alertContent;
+    promoApp.onclick = function() { promoApp.remove() };
     //let redir = "//".location.hostname + "/iraffle/device.html"
     //console.log('sucio dominio: ' + redir);
     //location.href = redir;
