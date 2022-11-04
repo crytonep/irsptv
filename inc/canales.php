@@ -12,7 +12,7 @@
     $channels = mysqli_query($conn, "select * from channels
     INNER JOIN categories ON channels.category = categories.categoryId
     INNER JOIN countries ON channels.country = countries.countryId
-    where category = 11 AND type IN ('9','10')
+    where category = 11 AND type IN ('9','11')
     ORDER BY RAND()
     DESC LIMIT 12");
     while ($result = mysqli_fetch_assoc($channels)) {
