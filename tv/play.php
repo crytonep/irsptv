@@ -16,11 +16,14 @@ $type = $result['type'];
 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
 <div class="container" id="adBanner">
     <div class="row">
-        <div class="col-6">
-            <?php include('../inc/ads/banner.php'); ?>
+        <div class="col-12">
+            <?php if (isset($_GET['id'])) { include('../inc/evento-tv.php'); } ?>
         </div>
         <div class="col-6">
-            <?php include('../inc/ads/banner.php'); ?>
+            <?php //include('../inc/ads/banner.php'); ?>
+        </div>
+        <div class="col-6">
+            <?php //include('../inc/ads/banner.php'); ?>
         </div>
     </div>
 </div>
@@ -36,6 +39,6 @@ $type = $result['type'];
         <?php }?>
     </div>
     <div class="container" id="adBanner2">
-        <?php include('../inc/ads/banner2.php'); include('../inc/ads/popunder.php'); ?>
+        <?php //include('../inc/ads/banner2.php'); include('../inc/ads/popunder.php');?>
     </div>
 </div>
