@@ -26,7 +26,7 @@ $type = $result['type'];
 </div>
 <div class="container">
     <a id="playerFake" href="https://abolishmentglum.com/mkd1fhhe?key=81193c57b7f58377107604b71a3e49aa" target="_blank">
-        <img src="<?=$app?>/img/player_img.png" alt="">
+        <img src="<?=$app?>img/player_img.png" alt="">
     </a>
     <div class="hidden" id="playerContainer">
         <?php if($type == 11) {?>

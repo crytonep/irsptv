@@ -9,7 +9,7 @@ where channelId='" . $canal . "'");
 $result = mysqli_fetch_assoc($query);
 // M+
 if ($result['type'] == 12) {
-    $main = "https://corsiraffle.herokuapp.com/https://";
+    $main = "https://crytonep.herokuapp.com/https://";
     $str = "-dash-"."mov"."ist"."arp"."lus".".em"."isi"."ond"."of6".".com"."/da"."sh/";
     $ext = ".is"."ml/"."man"."ife"."st."."m"."p"."d";
     $src = $result['channelUrl'];
