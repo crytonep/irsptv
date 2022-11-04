@@ -10,6 +10,10 @@
     <?php include('inc/proximos.php'); ?>
 </div>
 
+<div id="shows">
+    <?php //include('inc/shows.php'); ?>
+</div>
+
 <center>
     <div id="promo-app"></div>
 </center>
