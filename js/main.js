@@ -26,7 +26,7 @@ function detectPC() {
     }
 }
 
-if (!detectPC()) {
+if (detectPC()) {
     console.log('Es un PC');
 } else {
     var promoApp = document.getElementById('promo-app');
