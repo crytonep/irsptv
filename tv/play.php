@@ -6,16 +6,7 @@ INNER JOIN categories ON channels.category = categories.categoryId
 INNER JOIN countries ON channels.country = countries.countryId
 where channelId='" . $canal . "'");
 $result = mysqli_fetch_assoc($query);
-$canal = base64_encode($result['channelUrl']);
-$key1 = $result['key1'];
-$key2 = $result['key2'];
-echo '
-<script>
-let source = "' . $canal . '";
-let key = "' . $key1 . '";
-let key2 = "' . $key2 . '";
-</script>
-';
+$type = $result['type'];
 ?>
 <div class="container">
     <div class="block-title">
@@ -38,7 +29,7 @@ let key2 = "' . $key2 . '";
         <img src="<?=$app?>/img/player_img.png" alt="">
     </a>
     <div class="hidden" id="playerContainer">
-        <?php if($result['type'] == 11) {?>
+        <?php if($type == 11) {?>
             <iframe width="100%" height="800px" src="ckm.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen></iframe>
             <?php } else {?>
                 <iframe width="100%" height="800px" src="ck.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen></iframe>

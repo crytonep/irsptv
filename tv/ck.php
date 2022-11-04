@@ -7,15 +7,21 @@ $canal = $_GET['c'];
 $query = mysqli_query($conn, "select * from channels
 where channelId='" . $canal . "'");
 $result = mysqli_fetch_assoc($query);
-// Recargar página con SSL
-echo '<script>
-    if (window.location.protocol != "https:") {
-        //location.href =   location.href.replace("http://", "https://");
-    }
-    </script>';
-$source = base64_encode($result['channelUrl']);
-$key = $result['key1'];
-$key2 = $result['key2'];
+// M+
+if ($result['type'] == 12) {
+    $main = "https://corsiraffle.herokuapp.com/https://";
+    $str = "-dash-"."mov"."ist"."arp"."lus".".em"."isi"."ond"."of6".".com"."/da"."sh/";
+    $ext = ".is"."ml/"."man"."ife"."st."."m"."p"."d";
+    $src = $result['channelUrl'];
+    $source = $main . $src . $str . $src . $ext;
+    $source = base64_encode($source);
+    $key = base64_encode($result['key1']);
+    $key2 = base64_encode($result['key2']);
+} else {
+    $source = base64_encode($result['channelUrl']);
+    $key = $result['key1'];
+    $key2 = $result['key2'];
+}
 echo '
     <script>
     let source = "' . $source . '";
