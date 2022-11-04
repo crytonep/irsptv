@@ -41,7 +41,7 @@ $result = mysqli_fetch_array($ligas);
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img width="60px" src="<?= $app ?>img/equipos/<?= strtolower($result['ligaImg']) ?>/<?= str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
+                                    <img width="60px" src="<?= $app ?>img/equipos/<?= strtolower($result['ligaImg']) ?>/<?= str_replace(' ', '', strtolower($result['logoL'])); ?>.png" alt="" />
                                     <h4><?= ucfirst($local) ?></h4>
                                 </div>
                             </div>
