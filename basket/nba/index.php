@@ -25,10 +25,10 @@ $result = mysqli_fetch_array($ligas);
             $visita = $result['visita'];
             $index = $result['id'];
             // Channels
+            include('stream.php');
             include('../../inc/channels.php');
             include('../../inc/cntdwn.php');
             include('teams.php');
-            include('stream.php');
         ?>
             <!-- Elemento -->
             <div class="col-12">
