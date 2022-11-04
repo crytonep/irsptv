@@ -34,9 +34,11 @@ $type = $result['type'];
     <div class="hidden" id="playerContainer">
         <?php if($type == 11) {?>
             <iframe width="100%" height="800px" src="ckm.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen></iframe>
-            <?php } else {?>
+            <?php } elseif(isset($_GET['hls'])) {?>
+                <iframe width="100%" height="800px" src="hls.php?c=<?=$_GET['c']?>" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <?php } else{ ?>
                 <iframe width="100%" height="800px" src="ck.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen></iframe>
-        <?php }?>
+        <?php } ?>
     </div>
     <div class="container" id="adBanner2">
         <?php include('../inc/ads/banner2.php'); include('../inc/ads/popunder.php');?>
