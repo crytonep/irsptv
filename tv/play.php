@@ -20,10 +20,10 @@ $type = $result['type'];
             <?php if (isset($_GET['id'])) { include('../inc/evento-tv.php'); } ?>
         </div>
         <div class="col-6">
-            <?php //include('../inc/ads/banner.php'); ?>
+            <?php include('../inc/ads/banner.php'); ?>
         </div>
         <div class="col-6">
-            <?php //include('../inc/ads/banner.php'); ?>
+            <?php include('../inc/ads/banner.php'); ?>
         </div>
     </div>
 </div>
@@ -39,6 +39,6 @@ $type = $result['type'];
         <?php }?>
     </div>
     <div class="container" id="adBanner2">
-        <?php //include('../inc/ads/banner2.php'); include('../inc/ads/popunder.php');?>
+        <?php include('../inc/ads/banner2.php'); include('../inc/ads/popunder.php');?>
     </div>
 </div>
