@@ -73,6 +73,12 @@
                             <li class="menu-item <?php if (strpos($actual_link, "basket")) { echo "current-menu-item"; }?>">
                                 <a href="<?=$app?>basket">Basketball</a>
                             </li>
+                            <li class="menu-item <?php if (strpos($actual_link, "mlb")) { echo "current-menu-item"; }?>">
+                                <a href="<?=$app?>mlb">Béisbol</a>
+                            </li>
+                            <li class="menu-item <?php if (strpos($actual_link, "nfl")) { echo "current-menu-item"; }?>">
+                                <a href="<?=$app?>nfl">NFL</a>
+                            </li>
                             <li class="menu-item <?php if (strpos($actual_link, "tv")) {
                                 if (isset($_GET['futbol']) || isset($_GET['basket']) || isset($_GET['id'])) {
                                     // nada
