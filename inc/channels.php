@@ -2,6 +2,26 @@
 $canal = $result['canal'];
 $canal2 = $result['canal2'];
 $canal3 = $result['canal3'];
+$canal4 = $result['canal4'];
+$canal5 = $result['canal5'];
+$canal6 = $result['canal6'];
+
+// Logos
+if ($canal6 !== "") {
+    $query = mysqli_query($conn, "select * from channels where channelId = '$canal6'");
+    $row = mysqli_fetch_array($query);
+    $canalImg = $row['channelImg'];
+}
+if ($canal5 !== "") {
+    $query = mysqli_query($conn, "select * from channels where channelId = '$canal5'");
+    $row = mysqli_fetch_array($query);
+    $canalImg = $row['channelImg'];
+}
+if ($canal4 !== "") {
+    $query = mysqli_query($conn, "select * from channels where channelId = '$canal4'");
+    $row = mysqli_fetch_array($query);
+    $canalImg = $row['channelImg'];
+}
 
 // if ($result['canal3'] === "star+") {
 //     $canalImg = "starplus";
@@ -19,8 +39,6 @@ $canal3 = $result['canal3'];
 // } else {
 //     $custom2 = "";
 // }
-
-// Logos
 if ($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "golm") {
     $canalImg = "movistar";
     $canalop2 = '

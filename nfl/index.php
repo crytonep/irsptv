@@ -42,14 +42,14 @@ $result = mysqli_fetch_array($ligas);
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img width="60px" src="<?= $app ?>img/equipos/<?= strtolower($result['ligaImg']) ?>/<?= str_replace(' ', '', strtolower($local)); ?>.png" alt="" />
+                                    <img width="60px" src="<?= $app ?>img/equipos/<?= strtolower($result['ligaImg']) ?>/<?= str_replace(' ', '', strtolower($result['local'])); ?>.png" alt="" />
                                     <h4><?= ucfirst($local) ?></h4>
                                 </div>
                                 <div <?= $isEventoHidden ?> class="vs">
                                     <h6>vs</h6>
                                 </div>
                                 <div <?= $isEventoHidden ?> class="team">
-                                    <img width="60px" src="<?= $app ?>img/equipos/<?= strtolower($result['ligaImg']) ?>/<?= str_replace(' ', '', strtolower($visita)); ?>.png" alt="" />
+                                    <img width="60px" src="<?= $app ?>img/equipos/<?= strtolower($result['ligaImg']) ?>/<?= str_replace(' ', '', strtolower($result['visita'])); ?>.png" alt="" />
                                     <h4><?= ucfirst($visita) ?></h4>
                                 </div>
                             </div>
