@@ -2,7 +2,7 @@
     <div class="block-title">
         <h2>TV en Vivo</h2>
     </div>
-    <input type="text" name="searchbox" id="searchbox" class="filterinput form-control" placeholder="Buscar canales por nombre" onkeyup="buscarCanales()">
+    <!-- <input type="text" name="searchbox" id="searchbox" class="filterinput form-control" placeholder="Buscar canales por nombre" onkeyup="buscarCanales()"> -->
 </div>
 <div id="canales_content_q" class="canales-content container">
     <!-- Categorías -->
