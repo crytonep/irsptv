@@ -1,5 +1,6 @@
 <?php include('../conn.php');
 include('../inc/header.php');
+include('../inc/primos.php');
 //$getLiga = $_GET['id'];
 $getLiga = 22;
 $ligas = mysqli_query($conn, "select * from ligas
@@ -30,6 +31,14 @@ $result = mysqli_fetch_array($ligas);
             include('../inc/channels.php');
             include('../inc/cntdwn.php');
             include('teams.php');
+            $i++;
+            $numero = $i;
+            if (esPrimo($numero)) {
+                //echo 'Es primo';
+                include('../../inc/ads/banner-card.php');
+            } else {
+                // echo 'No es primo';
+            }
         ?>
             <!-- Elemento -->
             <div class="col-12">

@@ -1,4 +1,5 @@
 <?php include('../inc/header.php');
+include('../inc/primos.php');
 
 if (isset($_GET['c'])) {
     include('play.php');
