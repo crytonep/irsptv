@@ -1,2 +1,2 @@
-<script async="async" data-cfasync="false" src="//pl17709034.profitablegatetocontent.com/4da3cd607f700415595dd2eb6ec0456b/invoke.js"></script>
+<script async="async" data-cfasync="false" src="//pl17709034.highperformancecpmgate.com/4da3cd607f700415595dd2eb6ec0456b/invoke.js"></script>
 <div id="container-4da3cd607f700415595dd2eb6ec0456b"></div>
