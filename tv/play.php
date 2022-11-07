@@ -16,11 +16,11 @@ $type = $result['type'];
 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
 <div class="container" id="adBanner">
     <div class="row">
-        <div class="col-12">
-            <?php if (isset($_GET['id'])) { include('../inc/evento-tv.php'); } ?>
-        </div>
         <div class="col-12 text-center">
             <?php include('../inc/ads/banner.php'); ?>
+        </div>
+        <div class="col-12">
+            <?php if (isset($_GET['id'])) { include('../inc/evento-tv.php'); } ?>
         </div>
     </div>
 </div>
