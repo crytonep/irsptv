@@ -30,13 +30,13 @@ $type = $result['type'];
     </a>
     <div class="hidden" id="playerContainer">
         <?php if($type == 11) {?>
-            <iframe width="100%" height="800px" src="ckm.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <iframe width="100%" height="800px" src="ckm.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
             <?php }
         elseif(isset($_GET['hls'])) {?>
-            <iframe width="100%" height="800px" src="hls.php?c=<?=$_GET['c']?>" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <iframe width="100%" height="800px" src="hls.php?c=<?=$_GET['c']?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
         <?php }
         else{ ?>
-            <iframe width="100%" height="800px" src="ck.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <iframe width="100%" height="800px" src="ck.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
         <?php } ?>
     </div>
     <div class="container" id="adBanner2">
