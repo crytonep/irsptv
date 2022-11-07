@@ -23,6 +23,30 @@ if ($canal4 !== "") {
     $canalImg = $row['channelImg'];
 }
 
+// Opcion Adicional
+if ($result['canal3'] === "star+") {
+    $canalImg = "starplus";
+    $r = "../../star.php";
+    $vacio = '
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $r . '">
+        <i class="flag ar"></i>
+        Star +
+        </a>
+    </div>';
+} elseif (strpos($result['canal3'], "/")) {
+    $r = base64_encode($result['canal3']);
+    $custom2 = '
+        <div>
+            <a class="btn btn-lg btn-primary" href="../../tv?futbol&hls&c=' . $r . '">
+            <i class="flag us"></i>
+            Fuente | HD
+            </a>
+        </div>';
+} else {
+    $custom2 = "";
+}
+
 // if ($result['canal3'] === "star+") {
 //     $canalImg = "starplus";
 //     $r = $app . "star.php";
