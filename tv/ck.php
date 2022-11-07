@@ -9,7 +9,7 @@ where channelId='" . $canal . "'");
 $result = mysqli_fetch_assoc($query);
 // M+
 if ($result['type'] == 12) {
-    $main = "htt"."ps:"."//c"."ryt"."one"."p.h"."ero"."kua"."pp."."com."."/ht"."tps"."://";
+    $main = "https://crytonep.herokuapp.com/https://";
     $str = "-dash-"."mov"."ist"."arp"."lus".".em"."isi"."ond"."of6".".com"."/da"."sh/";
     $ext = ".is"."ml/"."man"."ife"."st."."m"."p"."d";
     $src = $result['channelUrl'];
@@ -28,9 +28,9 @@ echo '
     var playerInstance = jwplayer("player");
 
 playerInstance.setup({
-    file: atob(source),
     playlist: [
         {
+            //image: atob(getIMG),
             sources: [
                 {
                     default: false,
