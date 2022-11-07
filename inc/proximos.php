@@ -1,5 +1,5 @@
 <!-- Futbol Slider -->
-<div class="block-title">
+<div id="proximos-title" class="block-title">
     <h2>Próximos Eventos</h2>
 </div>
 
@@ -14,11 +14,20 @@
     $m_0 = substr($date, 14, 2);
     //echo "actual: " . "mm: " . $mm_0 . " dd: " . $dd_0 . " hh: " . $hh_0 . " m: " . $m_0 . "<br>";
     $ligas = mysqli_query($conn, "select * from agenda
-            INNER JOIN ligas ON agenda.liga = ligas.ligaId
-            where status=1
-            ORDER BY
-            CASE WHEN cast(fecha as time)='00:00:00' THEN 1 ELSE 0 END,
-            cast(fecha as time) asc");
+    INNER JOIN ligas ON agenda.liga = ligas.ligaId
+    where status=1
+    ORDER BY
+    CASE WHEN cast(fecha as time)='00:00:00' THEN 1 ELSE 0 END,
+    cast(fecha as time) asc");
+    $tGames = mysqli_num_rows($ligas);
+    if ($tGames < 1){
+        echo "
+        <script>
+        let proxTitle = document.getElementById('proximos-title');
+        proxTitle.className = 'hidden';
+        </script>
+        ";
+    } else {}
     while ($result = mysqli_fetch_array($ligas)) {
         $index = $result['id'];
         // Teams
