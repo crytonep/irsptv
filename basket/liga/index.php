@@ -1,5 +1,6 @@
 <?php include('../../conn.php');
 include('../../inc/header.php');
+include('../../inc/primos.php');
 $getLiga = $_GET['id'];
 $ligas = mysqli_query($conn, "select * from ligas
 where ligaId = '$getLiga'");
@@ -19,11 +20,21 @@ $result = mysqli_fetch_array($ligas);
         INNER JOIN ligas ON agenda.liga = ligas.ligaId
         where liga = '$getLiga'
         ORDER BY fecha asc");
+        $tGames = mysqli_num_rows($ligas);
+        $tGames = round($tGames / 3);
         while ($result = mysqli_fetch_array($ligas)) {
             // Teams
             $local = $result['local'];
             $visita = $result['visita'];
             $index = $result['id'];
+            $i++;
+            $numero = $i;
+            if (esPrimo($numero)) {
+                //echo 'Es primo';
+                include('../../inc/ads/banner-card.php');
+            } else {
+                // echo 'No es primo';
+            }
             // Channels
             include('custom.php');
             include('../../inc/channels.php');
