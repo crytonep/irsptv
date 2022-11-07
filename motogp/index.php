@@ -28,6 +28,7 @@ $result = mysqli_fetch_array($ligas);
             include('custom.php');
             include('../inc/channels.php');
             include('../inc/cntdwn.php');
+            include('../inc/show.php');
             include('teams.php');
         ?>
             <!-- Elemento -->

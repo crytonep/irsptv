@@ -30,6 +30,7 @@ $result = mysqli_fetch_array($ligas);
             include('stream.php');
             include('../inc/channels.php');
             include('../inc/cntdwn.php');
+            include('../inc/show.php');
             include('teams.php');
             $i++;
             $numero = $i;

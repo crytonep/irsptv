@@ -30,6 +30,7 @@ $result = mysqli_fetch_array($ligas);
             include('../../inc/channels.php');
             include('../../inc/cntdwn.php');
             include('teams.php');
+            include('../../inc/show.php');
             $i++;
             $numero = $i;
             if (esPrimo($numero)) {

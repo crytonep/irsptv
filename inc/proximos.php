@@ -52,31 +52,31 @@
         if ($mm_0 === $mm_1) {
             if ($dd_0 === $dd_1) {
                 if ($liga == "23") {
-                    $link = "basket/nba?ir";
+                    $link = "basket/nba?ir&juego=".$index;
                     include('basket/nba/teams.php');
                     $localImg = $local;
                     $visitaImg = $visita;
                     $isMotor = "";
                 } elseif ($liga == "12" || $liga == 13) {
-                    $link = "basket/liga?id=" . $liga;
+                    $link = "basket/liga?id=" . $liga . "&juego=" . $index;
                     include('basket/liga/teams.php');
                     $localImg = str_replace(" ", "", $result['local']);
                     $visitaImg = str_replace(" ", "", $result['visita']);
                     $isMotor = "";
                 } elseif ($liga == "22") {
-                    $link = "mlb?ir";
+                    $link = "mlb?ir&juego=" . $index;
                     include('mlb/teams.php');
                     $localImg = strtolower($local);
                     $visitaImg = strtolower($visita);
                     $isMotor = "";
                 } elseif ($liga == "25") {
-                    $link = "balonmano?ir";
+                    $link = "balonmano?ir&juego=" . $index;
                     include('balonmano/teams.php');
                     $localImg = str_replace(" ", "", $result['local']);
                     $visitaImg = str_replace(" ", "", $result['visita']);
                     $isMotor = "";
                 } elseif ($liga == "14") {
-                    $link = "nfl?ir";
+                    $link = "nfl?ir&juego=" . $index;
                     include('nfl/teams.php');
                 } elseif ($liga == "28") {
                     $link = "f1?ir";
@@ -85,26 +85,26 @@
                     $localImg = $result['logoL'];
                     //include('agenda/nfl/teams.php');
                 } elseif ($liga == "29") {
-                    $link = "motogp?ir";
+                    $link = "motogp?ir&juego=" . $index;
                     $isMotor = 'style="display: none;"';
                     $motorText = '<h4 style="position: absolute; margin-top: 94px;">' . $local . '</h4>';
                     $localImg = $result['logoL'];
                     //include('agenda/nfl/teams.php');
                 } elseif ($liga == "32") {
-                    $link = "futbol/liga?id=" . $liga;
+                    $link = "futbol/liga?id=" . $liga . "&juego=" . $index;
                     $isMotor = 'style="display: none;"';
                     $motorText = '<h4 style="position: absolute; margin-top: 94px;">' . $local . '</h4>';
                 } elseif ($liga == "35") {
                     $link = "ufc/?ir";
                 } else {
-                    $link = "futbol/liga?id=" . $liga;
+                    $link = "futbol/liga?id=" . $liga . "&juego=" . $index;
                     include('futbol/liga/teams.php');
                     $isMotor = "";
                     $motorText = "";
                 }
     ?>
                 <div class="eventito">
-                    <a href="<?=$link?>" title="<?=$ligaName?>: <?=$local?> vs <?=$visita?> en Directo por iRaffle TV">
+                    <a href="<?=$link?>" title="<?=ucfirst($ligaName)?>: <?=ucfirst($local)?> vs <?=ucfirst($visita)?> en Directo por iRaffle TV">
                         <div class="lm-info-block gray-default">
                             <div class="mini-league">
                                 <img width="5px" src="<?=$app?>img/ligas/<?=$ligaImg?>.png" alt="">
