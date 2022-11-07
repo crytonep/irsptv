@@ -40,7 +40,7 @@ if ($result['canal3'] === "star+") {
         <div>
             <a class="btn btn-lg btn-primary" href="../../tv?futbol&hls&id=' . $index . '&c=' . $r . '">
             <i class="flag us"></i>
-            Fuente | HD
+            Diferido | HD
             </a>
         </div>';
 } else {
