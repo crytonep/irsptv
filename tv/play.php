@@ -19,7 +19,7 @@ $type = $result['type'];
         <div class="col-12">
             <?php if (isset($_GET['id'])) { include('../inc/evento-tv.php'); } ?>
         </div>
-        <div class="col-12">
+        <div class="col-12 text-center">
             <?php include('../inc/ads/banner.php'); ?>
         </div>
     </div>
