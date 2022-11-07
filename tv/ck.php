@@ -29,6 +29,21 @@ echo '
 
 playerInstance.setup({
     file: atob(source),
+    playlist: [
+        {
+            sources: [
+                {
+                    default: false,
+                    type: "dash",
+                    file: atob(source),
+                    drm: {
+                        clearkey: { keyId: atob("' . $key . '"), key: atob("' . $key2 . '") },
+                    },
+                    label: "0",
+                },
+            ],
+        },
+    ],
     height: "100vh",
     width: "100%",
     aspectratio: "16:9",
