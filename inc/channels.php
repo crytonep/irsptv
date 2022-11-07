@@ -38,7 +38,7 @@ if ($result['canal3'] === "star+") {
     $r = base64_encode($result['canal3']);
     $custom2 = '
         <div>
-            <a class="btn btn-lg btn-primary" href="../../tv?futbol&hls&c=' . $r . '">
+            <a class="btn btn-lg btn-primary" href="../../tv?futbol&hls&id=' . $index . '&c=' . $r . '">
             <i class="flag us"></i>
             Fuente | HD
             </a>
