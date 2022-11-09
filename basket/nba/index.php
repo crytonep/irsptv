@@ -63,7 +63,7 @@ $result = mysqli_fetch_array($ligas);
                                 </div>
                             </div>
                             <div class="channel">
-                                <img src="<?= $app ?>img/canales/<?= ($canalImg === null) ? "152x152" : $canalImg ?>.png" alt="" />
+                                <img src="<?= $app ?>img/canales/<?= ($canalImg === null) ? "nbalp" : $canalImg ?>.png" alt="" />
                             </div>
                         </div>
                     </div>

@@ -61,7 +61,7 @@ include('cntdwn.php');
             </div>
         </div>
         <div class="channel">
-            <img src="../img/canales/<?=$result['channelImg']?>.png" alt="" />
+            <img src="../img/canales/<?= (isset($_GET['nba']) && isset($_GET['ifr'])) ? "nbalp" : $result['channelImg'] ?>.png" alt="" />
         </div>
     </div>
 </div>
