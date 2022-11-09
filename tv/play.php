@@ -40,11 +40,8 @@ $type = $result['type'];
                 elseif(isset($_GET['nba'])) {?>
                     <iframe sandbox="allow-scripts allow-same-origin" class="embed-responsive-item" width="100%" height="100%" src="<?=base64_decode($_GET['ifr'])?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
                 <?php }
-                elseif(isset($_GET['r'])) {?>
-                    <iframe class="embed-responsive-item" width="100%" height="100%" src="ck.php?r=<?=base64_decode($_GET['r'])?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
-                <?php }
                 else{ ?>
-                    <iframe class="embed-responsive-item" width="100%" height="100%" src="star.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
+                    <iframe class="embed-responsive-item" width="100%" height="100%" src="ck.php?c=<?=$result['channelId']?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
                 <?php } ?>
             </div>
         </div>
