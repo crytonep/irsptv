@@ -27,7 +27,7 @@ if ($canal4 !== "") {
 if ($result['canal3'] === "star+") {
     $canalImg = "starplus";
     $r = "../../star.php";
-    $vacio = '
+    $custom1 = '
     <div>
         <a class="btn btn-lg btn-primary" href="' . $r . '">
         <i class="flag ar"></i>
