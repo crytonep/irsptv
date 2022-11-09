@@ -10,7 +10,7 @@ if (strpos($result['channelUrl'], "//dtvott-") !== false){
     $url = base64_encode($result['channelUrl']);
     $url = $nURL.$url."&key=".$result['key1']."&key2=".$result['key2'];
     echo '
-    <iframe src="'.$url.'" width="100%" height="100%" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
+    <iframe src="'.$url.'" width="100%" height="100%" scrolling="no" allowfullscreen allow"encrypted-media"></iframe>
     ';
 } else {
 ?>
