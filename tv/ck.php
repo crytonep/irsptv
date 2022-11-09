@@ -6,7 +6,7 @@ where channelId='" . $canal . "'");
 $result = mysqli_fetch_assoc($query);
 // DVTOTT
 if (strpos($result['channelUrl'], "//dtvott-") !== false){
-    $nURL = "https://irpc.ga/mg/play/?get=";
+    $nURL = "https://irpc.ga/mg/play/dtv.html?get=";
     $url = base64_encode($result['channelUrl']);
     $url = $nURL.$url."&key=".$result['key1']."&key2=".$result['key2'];
     echo '
