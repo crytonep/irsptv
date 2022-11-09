@@ -44,7 +44,7 @@ $type = $result['type'];
         </div>
         <div class="col-4">
             <!-- Chat -->
-            <iframe src="https://www.twitch.tv/embed/slowdmelendez360/chat?parent=iraffle.live?darkpopout" height="100%" width="100%">
+            <iframe src="https://www.twitch.tv/embed/slowdmelendez360/chat?darkpopout&parent=iraffle.live" height="100%" width="100%">
             </iframe>
         </div>
         <div class="container" id="adBanner2">
