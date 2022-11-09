@@ -44,7 +44,8 @@ $type = $result['type'];
         </div>
         <div class="col-4">
             <!-- Chat -->
-            <iframe width="100%" src="https://www.youtube.com/live_chat?v=uDn8r0q_oi4&embed_domain=localhost" ></iframe>
+            <iframe src="https://www.twitch.tv/embed/slowdmelendez360/chat?parent=iraffle.live" height="100%" width="100%">
+            </iframe>
         </div>
         <div class="container" id="adBanner2">
             <?php include('../inc/ads/banner2.php'); //include('../inc/ads/popunder.php');?>
