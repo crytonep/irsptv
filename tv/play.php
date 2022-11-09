@@ -17,7 +17,7 @@ $type = $result['type'];
 <div class="container" id="adBanner">
     <div class="row">
         <div class="col-12 text-center">
-            <?php include('../inc/ads/banner.php'); ?>
+            <?php //include('../inc/ads/banner.php'); ?>
         </div>
         <div class="col-12">
             <?php if (isset($_GET['id'])) { include('../inc/evento-tv.php'); } ?>
@@ -43,7 +43,7 @@ $type = $result['type'];
             </div>
         </div>
         <div class="container" id="adBanner2">
-            <?php include('../inc/ads/banner2.php'); //include('../inc/ads/popunder.php');?>
+            <?php include('../inc/ads/popunder.php'); //include('../inc/ads/banner2.php');?>
         </div>
     </div>
 </div>
