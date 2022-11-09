@@ -71,6 +71,18 @@ $result = mysqli_fetch_array($ligas);
                 <div class="collapse <?= $collapse ?>" id="juego<?= $result['id'] ?>">
                     <div class="card card-body lm-info-block gray-default">
                         <ul class="sub-menu">
+                            <div>
+                                <a class="btn btn-lg btn-primary" href="?g=<?=$local?>&id=<?=$index?>">
+                                    <i class="flag us"></i>
+                                    League Pass | <?=ucfirst($local)?>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="btn btn-lg btn-primary" href="?g=<?=$local?>&id=<?=$index?>">
+                                    <i class="flag us"></i>
+                                    League Pass | <?=ucfirst($visita)?>
+                                </a>
+                            </div>
                             <?php
                             // Canal 2
                             echo $canalop2;
