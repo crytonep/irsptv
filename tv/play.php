@@ -42,7 +42,7 @@ $type = $result['type'];
                 <?php } ?>
             </div>
         </div>
-        <div class="col-4">
+        <div style="height: 600px" class="col-4">
             <!-- Chat -->
             <iframe src="https://www.twitch.tv/embed/slowdmelendez360/chat?darkpopout&parent=iraffle.live" height="100%" width="100%">
             </iframe>
