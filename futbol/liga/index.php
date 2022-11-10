@@ -25,7 +25,6 @@ $result = mysqli_fetch_array($ligas);
             $local = $result['local'];
             $visita = $result['visita'];
             $index = $result['id'];
-            echo str_replace(" ", '', $local) . " vs " . str_replace(" ", '', $visita);
             // Channels
             include('custom.php');
             include('../../inc/channels.php');
