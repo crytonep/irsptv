@@ -9,6 +9,10 @@
 .live-text ion-icon {
   color: red;
 }
+.cntdwn i {
+  color: red;
+  font-size: 15px;
+}
 .main-event p {
   color: #fff !important;
 }

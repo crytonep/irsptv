@@ -28,7 +28,7 @@ var dd = '<?=$dd?>';
 var hh = '<?=$hh?>';
 var m = '<?=$m?>';
 
-var textLive = "En Vivo";
+var textLive = "<i class='fa fa-circle faa-flash animated'></i>En Vivo";
 var textEnd = "Finalizó";
 
 
