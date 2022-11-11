@@ -56,15 +56,22 @@ if (isset($_GET['ifr'])) {
             <?php if (isset($_GET['r'])) { ?>
                 <div class="hidden" id="playerContainer">
                     <div id="player"></div>
-                    <?php echo '
+                    <?php
+                    include('../inc/scraper.php');
+                    echo '
                     <script>
                     var source = "'.base64_encode($_GET['r']).'";
                     var key = "'.base64_encode($_GET['key']).'";
                     var key2 = "'.base64_encode($_GET['key2']).'";
+                    var img = "'.base64_encode($_GET['img']).'";
                     </script>';?>
                     <script src="../js/player.js"></script>
                 </div>
-            <?php }?>
+                <hr>
+                <div class="block-title">
+                    <h2>Eventos Star+</h2>
+                </div>
+            <?php include('../inc/star.php'); }?>
             <div class="hidden embed-responsive embed-responsive-16by9" id="playerContainer" style="width: 100%; margin: auto; box-shadow: 2px 2px 8px 2px #2c2c2c;">
                 <?php if ($type == 11) { ?>
                     <iframe class="embed-responsive-item" width="100%" height="100%" src="ckm.php?c=<?= $result['channelId'] ?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
