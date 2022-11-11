@@ -78,8 +78,16 @@
                             <li class="menu-item <?php if (strpos($actual_link, "nfl")) { echo "current-menu-item"; }?>">
                                 <a href="<?=$app?>nfl">NFL</a>
                             </li>
-                            <li class="menu-item <?php if (strpos($actual_link, "f1")) { echo "current-menu-item"; }?>">
-                                <a href="<?=$app?>f1">F1</a>
+                            <li class="menu-item menu-item-has-children <?php if (strpos($actual_link, "motogp") || strpos($actual_link, "f1")) { echo "current-menu-item"; }?>">
+                                <a href="#motor">Motor</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item <?php if (strpos($actual_link, "f1")) { echo "current-menu-item"; }?>">
+                                            <a href="<?=$app?>f1">Formula 1</a>
+                                        </li>
+                                        <li class="menu-item <?php if (strpos($actual_link, "motogp")) { echo "current-menu-item"; }?>">
+                                            <a href="<?=$app?>motogp">MotoGP</a>
+                                        </li>
+                                    </ul>
                             </li>
                             <li class="menu-item <?php if (strpos($actual_link, "tv")) {
                                 if (isset($_GET['futbol']) || isset($_GET['basket']) || isset($_GET['id'])) {
