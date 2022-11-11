@@ -95,6 +95,38 @@ if ($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mund
     </div>';
 }
 
+if ($canal === "Gol Mundial 2" || $canal === "Gol Mundial 2" || $canal === "Gol Mundial 2" || $canal === "golm2") {
+    $canalImg = "golm2";
+    $canalop2 = '
+    <div>
+        <a href="' . $app . 'play?futbol&id=' . $index . '&c=golm" class="btn btn-lg btn-primary">
+        <i class="flag es"></i>
+        Gol Mundial 2 | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=golm2sd">
+        <i class="flag es"></i>
+        Gol Mundial 2 | VIP SD
+        </a>
+    </div>';
+} elseif ($canal2 === "Gol Mundial 2" || $canal2 === "Gol Mundial 2" || $canal2 === "Gol Mundial 2" || $canal2 === "golm") {
+    $canalImg = "golm2";
+    $canalop4 = '
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=golm2">
+        <i class="flag es"></i>
+        Gol Mundial 2 | VIP HD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=golm2sd">
+        <i class="flag es"></i>
+        Gol Mundial 2 | VIP SD
+        </a>
+    </div>';
+}
+
 if ($canal === "M+ Liga de Campeones" || $canal === "M+ Liga de Campeones UHD (M441 O115)" || $canal === "M+ Liga de Campeones (M56 O114)" || $canal === "mlcamp") {
     $canalImg = "campeones";
     $canalop2 = '
