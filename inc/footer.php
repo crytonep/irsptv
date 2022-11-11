@@ -26,11 +26,8 @@
 <script src="<?=$app?>js/jquery-3.5.1.min.js"></script>
 <script src="<?=$app?>js/imagesloaded.pkgd.min.js"></script>
 <script src="<?=$app?>js/bootstrap.min.js"></script>
-<script src='<?=$app?>js/jquery.shuffle.min.js'></script>
-<script src='<?=$app?>js/masonry.pkgd.min.js'></script>
 <script src='<?=$app?>js/owl.carousel.min.js'></script>
 <script src="<?=$app?>js/jquery.magnific-popup.min.js"></script>
-<script src="<?=$app?>js/validator.js"></script>
 <script src="<?=$app?>js/main.js"></script>
 </body>
 
