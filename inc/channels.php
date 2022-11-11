@@ -67,10 +67,9 @@ if ($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mund
     $canalImg = "movistar";
     $canalop2 = '
     <div>
-        <a
-        href="' . $app . 'play?futbol&id=' . $index . '&c=golmsd"
-        class="btn btn-lg btn-primary">
-            Gol Mundial | VIP HD
+        <a href="' . $app . 'play?futbol&id=' . $index . '&c=golm" class="btn btn-lg btn-primary">
+        <i class="flag es"></i>
+        Gol Mundial | VIP HD
         </a>
     </div>
     <div>
