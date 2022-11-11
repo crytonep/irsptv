@@ -19,13 +19,19 @@
     <link rel="stylesheet" href="<?=$app?>css/styles.css" type="text/css">
     <script src="<?=$app?>js/modernizr.custom.js"></script>
     <?php
-    if ($actual_link !== $app){
+    if ($actual_link == $app){
     ?>
     <script>
-    if (window.location.protocol != "https:") {
-        location.href =   location.href.replace("http://", "https://");
-    } else {}</script>
-    <?php }?>
+    if (window.location.protocol != "http:") {
+        location.href =   location.href.replace("https://", "http://");
+    }</script>
+    <?php } else { ?>
+        <script>
+            if (window.location.protocol != "https:") {
+                location.href =   location.href.replace("http://", "https://");
+            }
+        </script>
+    <?php } ?>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174658361-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
