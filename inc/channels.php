@@ -64,7 +64,7 @@ if ($result['canal3'] === "star+") {
 //     $custom2 = "";
 // }
 if ($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "golm") {
-    $canalImg = "movistar";
+    $canalImg = "golm";
     $canalop2 = '
     <div>
         <a href="' . $app . 'play?futbol&id=' . $index . '&c=golm" class="btn btn-lg btn-primary">
@@ -79,7 +79,7 @@ if ($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mund
         </a>
     </div>';
 } elseif ($canal2 === "Gol Mundial" || $canal2 === "Gol Mundial" || $canal2 === "Gol Mundial" || $canal2 === "golm") {
-    $canalImg = "movistar";
+    $canalImg = "golm";
     $canalop4 = '
     <div>
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=golm">
