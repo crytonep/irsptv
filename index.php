@@ -80,10 +80,14 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Output the result in an element with id="demo"
+        if (days > 0){
         for (const ele of document.getElementsByClassName("qatarEcuador")){
-            ele.innerHTML = (days + "<span>d</span> " + hours + "<span>h</span> "
-            + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
-        }
+            ele.innerHTML = (days + "d " + hours + "h")
+        }} else {
+            for (const ele of document.getElementsByClassName("qatarEcuador")){
+                ele.innerHTML = (hours + "<span>h</span> "
+                + minutes + "<span>m</span> " + seconds + "<span>s</span><br />")
+            }}
         //console.log(distance);
         // If the count down is over, write some text
         if (distance < 0) {
