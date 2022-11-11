@@ -10,13 +10,14 @@
     <meta name="keywords" content="futbol, basketball, mlb, nfl, tenis, tv, acb, uefa, champions, europa, laliga, premier, serie a, bundesliga" />
     <meta name="author" content="iRaffle" />
     <link rel="shortcut icon" href="<?=$app?>img/favicon.ico">
+    <!-- <link rel="stylesheet" href="<?=$app?>css/normalize.css" type="text/css"> -->
     <link rel="stylesheet" href="<?=$app?>css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="<?=$app?>css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="<?=$app?>css/main.css" type="text/css">
     <link rel="stylesheet" href="<?=$app?>css/events.css" type="text/css">
     <link rel="stylesheet" href="<?=$app?>css/slider.css" type="text/css">
     <link rel="stylesheet" href="<?=$app?>css/styles.css" type="text/css">
-    <!-- <script src="<?=$app?>js/modernizr.custom.js"></script> -->
+    <script src="<?=$app?>js/modernizr.custom.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174658361-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
