@@ -1,5 +1,8 @@
+// SSL
+if (window.location.protocol != "http:") {
+    location.href =   location.href.replace("https://", "http://");
+}
 // Alerta
-
 setTimeout(() => {
     const alerta = document.getElementById('alertaDesarrollo');
     //alerta.style.display = 'none';
