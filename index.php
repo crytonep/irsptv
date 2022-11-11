@@ -18,7 +18,7 @@
                 <div class="container">
                     <div id="player"></div>
                     <div class="page-subtitle text-center">
-                        <h4><a class="button btn-primary" href="play/?mundial"><i class="fa fa-crown text-warning"></i> ¡Hazte Premium y Disfruta de Todo el Mundial!</a></h4>
+                        <h4><a class="button btn-primary" href="play/?mundial"><i class="fa fa-crown text-warning"></i> ¡Hazte Premium y accede a este y más canales!</a></h4>
                     </div>
                 </div>
                 <script>
