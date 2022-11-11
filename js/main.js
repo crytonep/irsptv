@@ -1,6 +1,6 @@
 // SSL
-if (window.location.protocol != "http:") {
-    location.href =   location.href.replace("https://", "http://");
+if (window.location.protocol != "https:") {
+    location.href =   location.href.replace("http://", "https://");
 }
 // Alerta
 setTimeout(() => {
