@@ -85,7 +85,7 @@ if (isset($_GET['ifr'])) {
             </div>
         </div>
         <div class="container" id="adBanner2">
-            <?php //include('../inc/ads/popunder.php'); //include('../inc/ads/banner2.php');
+            <?php include('../inc/ads/popunder.php'); //include('../inc/ads/banner2.php');
             ?>
         </div>
     </div>

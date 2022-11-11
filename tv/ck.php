@@ -6,11 +6,13 @@ where channelId='" . $canal . "'");
 $result = mysqli_fetch_assoc($query);
 // DVTOTT
 if (strpos($result['channelUrl'], "//dtvott-") !== false){
-    $nURL = "https://irpc.ga/mg/play/dtv.html?get=";
+    $nURL = "https://irpc.ga/mg/play/dtv.php?get=";
     $url = base64_encode($result['channelUrl']);
     $url = $nURL.$url."&key=".$result['key1']."&key2=".$result['key2'];
     echo '
-    <iframe src="'.$url.'" width="100%" height="100%" scrolling="no" allowfullscreen allow"encrypted-media"></iframe>
+    <a href="'.$url.'" target="_blank">
+        <img width="100%" class="img-fluid" src="../img/player_img.png" alt="">
+    </a>
     ';
 } else {
 ?>
