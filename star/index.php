@@ -35,7 +35,6 @@ include('../inc/scraper.php'); ?>
                                             $link = str_replace("/embed/star/?r=", "", $link);
                                             $link = base64_decode($link);
                                             $link = str_replace("//vercomofutbol.xyz/s/star_jwp.html?get=", "", $link);
-                                            $link = base64_encode($link);
                                             $link = "../tv?r=" . $link;
                                         }
                                     ?>
