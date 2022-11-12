@@ -17,9 +17,11 @@ if ($result['liga'] == 32){
     $local = str_replace('osasuna', 'CA Osasuna', $local);
     $local = str_replace('cdiz', 'Cádiz CF', $local);
     $local = str_replace('elche', 'Elche CF', $local);
-    if ($result['liga'] == 1 || $result['liga'] == 3){
+    if ($result['liga'] == 1 || $result['liga'] == 2 || $result['liga'] == 3){
         $local = str_replace('barcelona', 'FC Barcelona', $local);
+        $local = str_replace('valladolid', 'Real Valladolid CF', $local);
         $visita = str_replace('barcelona', 'FC Barcelona', $visita);
+        $visita = str_replace('valladolid', 'Real Valladolid CF', $visita);
     }
     $local = str_replace('getafe', 'Getafe CF', $local);
     $local = str_replace('girona', 'Girona FC', $local);
@@ -31,7 +33,6 @@ if ($result['liga'] == 32){
     $local = str_replace('betis', 'Real Betis', $local);
     $local = str_replace('realmadrid', 'Real Madrid', $local);
     $local = str_replace('realsociedad', 'Real Sociedad', $local);
-    $local = str_replace('valladolid', 'Real Valladolid CF', $local);
     $local = str_replace('sevilla', 'Sevilla FC', $local);
     $local = str_replace('almera', 'UD Almería', $local);
     $local = str_replace('valencia', 'Valencia CF', $local);
@@ -53,7 +54,6 @@ if ($result['liga'] == 32){
     $visita = str_replace('betis', 'Real Betis', $visita);
     $visita = str_replace('realmadrid', 'Real Madrid', $visita);
     $visita = str_replace('realsociedad', 'Real Sociedad', $visita);
-    $visita = str_replace('valladolid', 'Real Valladolid CF', $visita);
     $visita = str_replace('sevilla', 'Sevilla FC', $visita);
     $visita = str_replace('almera', 'UD Almería', $visita);
     $visita = str_replace('valencia', 'Valencia CF', $visita);
@@ -165,6 +165,7 @@ if ($result['liga'] == 32){
     $local = str_replace("cdcazalegas", "CD Cazalegas", $local);
     $local = str_replace("udalzira", "UD Alzira", $local);
     $local = str_replace("racing ferrol", "Racing Ferrol", $local);
+    $local = str_replace('realvalladolid', 'Real Valladolid CF', $local);
 
     $visita = str_replace("barbads", "Barbadás", $visita);
     $visita = str_replace("cdmanacor", "CD Manacor", $visita);
@@ -219,6 +220,7 @@ if ($result['liga'] == 32){
     $visita = str_replace("cdcazalegas", "CD Cazalegas", $visita);
     $visita = str_replace("udalzira", "UD Alzira", $visita);
     $visita = str_replace("racing ferrol", "Racing Ferrol", $visita);
+    $visita = str_replace('realvalladolid', 'Real Valladolid CF', $visita);
     //Premier
     $local = str_replace("bournemouth", "AFC Bournemouth", $local);
     $local = str_replace("astonvilla", "Aston Villa", $local);
