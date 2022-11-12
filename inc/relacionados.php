@@ -31,7 +31,7 @@
             $name = $result['channelName'];
             $img = $result['channelImg'];
         ?>
-            <div class="eventito">
+            <div style="max-width:25vh" class="eventito">
                 <a href="?c=<?= $index ?>" title="Ver en vivo: <?= ucfirst($name) ?> en iRaffle TV">
                     <div class="lm-info-block gray-default">
                         <div class="main-event">
