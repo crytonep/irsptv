@@ -20,17 +20,7 @@ if (strpos($result['channelUrl'], "//dtvott-") !== false || strpos($result['chan
     <script>jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
     <div id="player"></div>
     <?php
-    // M+
-    if ($result['type'] == 12) {
-        $main = "https://crytonep.herokuapp.com/https://";
-        $str = "-dash-"."mov"."ist"."arp"."lus".".em"."isi"."ond"."of6".".com"."/da"."sh/";
-        $ext = ".is"."ml/"."man"."ife"."st."."m"."p"."d";
-        $src = $result['channelUrl'];
-        $source = $main . $src . $str . $src . $ext;
-        $source = base64_encode($source);
-        $key = base64_encode($result['key1']);
-        $key2 = base64_encode($result['key2']);
-    } elseif ($result['type'] == 1) {
+    if ($result['type'] == 1) {
         $source = base64_encode($result['channelUrl']);
         echo '
         <script>
@@ -81,10 +71,21 @@ if (strpos($result['channelUrl'], "//dtvott-") !== false || strpos($result['chan
             </script>
             ';
     } else {
+        if ($result['type'] == 12) {
+            $main = "https://crytonep.herokuapp.com/https://";
+            $str = "-dash-"."mov"."ist"."arp"."lus".".em"."isi"."ond"."of6".".com"."/da"."sh/";
+            $ext = ".is"."ml/"."man"."ife"."st."."m"."p"."d";
+            $src = $result['channelUrl'];
+            $source = $main . $src . $str . $src . $ext;
+            $source = base64_encode($source);
+            $key = base64_encode($result['key1']);
+            $key2 = base64_encode($result['key2']);
+        } else {
         $source = base64_encode($result['channelUrl']);
         $key = $result['key1'];
         $key2 = $result['key2'];
     }
+}
     echo '
         <script>
         let source = "' . $source . '";
