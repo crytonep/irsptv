@@ -16,7 +16,7 @@
             $index = $result['categoryId'];
             $queryQty = mysqli_query($conn, "select * from channels
             where category = $index
-            AND type IN ('9', '11', '12')");
+            AND type IN ('1', '9', '11', '12')");
             $totalChannels = mysqli_num_rows($queryQty);
             if ($totalChannels < 6) {
                 $categoryStatus = "hidden";
@@ -35,7 +35,7 @@
         $channels = mysqli_query($conn, "select * from channels
         INNER JOIN categories ON channels.category = categories.categoryId
         INNER JOIN countries ON channels.country = countries.countryId
-        AND type IN ('9', '11','12')
+        AND type IN ('1', '9', '11','12')
         ORDER BY channelId");
         while ($result = mysqli_fetch_assoc($channels)) {
             //Ocultar los chn tipo 12
