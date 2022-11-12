@@ -1,4 +1,5 @@
-<!-- Futbol Slider -->
+<?php if (!isset($_GET['c'])) {} else { ?>
+<!-- Relacionados Slider -->
 <div id="relacionados-title" class="block-title">
     <h2>Canales Relacionados</h2>
 </div>
@@ -48,4 +49,5 @@
         <?php }
         ?>
     </div>
-    <!-- /Futbol Slider -->
+    <!-- /Relacionados Slider -->
+<?php }?>

@@ -84,6 +84,7 @@ if (isset($_GET['ifr'])) {
                 <?php } ?>
             </div>
         </div>
+        <hr>
         <div id="relacionados">
             <?php include('../inc/relacionados.php'); ?>
         </div>
