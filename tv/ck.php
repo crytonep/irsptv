@@ -30,6 +30,56 @@ if (strpos($result['channelUrl'], "//dtvott-") !== false || strpos($result['chan
         $source = base64_encode($source);
         $key = base64_encode($result['key1']);
         $key2 = base64_encode($result['key2']);
+    } elseif ($result['type'] == 1) {
+        $source = base64_encode($result['channelUrl']);
+        echo '
+        <script>
+        let source = "' . $source . '";
+        var playerInstance = jwplayer("player");
+        playerInstance.setup({
+            playlist: [
+                {
+                    //image: atob(getIMG),
+                    sources: [
+                        {
+                            default: false,
+                            type: "dash",
+                            file: atob(source),
+                            label: "0",
+                        },
+                    ],
+                },
+            ],
+            height: "100vh",
+            width: "100%",
+            aspectratio: "16:9",
+            stretching: "bestfit",
+            mediaid: "player",
+            mute: false,
+            autostart: true,
+            language: "es",
+            cast: {
+                appid: "player",
+                logo: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+            },
+            logo: {
+                file: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+                hide: "false",
+                position: "top-left",
+            }
+        });
+        // Preview Hack
+        setTimeout(function() {
+            jwplayer().setMute(false);
+            jwplayer().setControls(true);
+            },1000);
+            jwplayer().onTime(function(object) {
+                if (object.position > object.duration - 1) {
+                    jwplayer().pause();
+                }
+            });
+            </script>
+            ';
     } else {
         $source = base64_encode($result['channelUrl']);
         $key = $result['key1'];
@@ -39,52 +89,51 @@ if (strpos($result['channelUrl'], "//dtvott-") !== false || strpos($result['chan
         <script>
         let source = "' . $source . '";
         var playerInstance = jwplayer("player");
-
-    playerInstance.setup({
-        playlist: [
-            {
-                //image: atob(getIMG),
-                sources: [
-                    {
-                        default: false,
-                        type: "dash",
-                        file: atob(source),
-                        drm: {
-                            clearkey: { keyId: atob("' . $key . '"), key: atob("' . $key2 . '") },
+        playerInstance.setup({
+            playlist: [
+                {
+                    //image: atob(getIMG),
+                    sources: [
+                        {
+                            default: false,
+                            type: "dash",
+                            file: atob(source),
+                            drm: {
+                                clearkey: { keyId: atob("' . $key . '"), key: atob("' . $key2 . '") },
+                            },
+                            label: "0",
                         },
-                        label: "0",
-                    },
-                ],
+                    ],
+                },
+            ],
+            height: "100vh",
+            width: "100%",
+            aspectratio: "16:9",
+            stretching: "bestfit",
+            mediaid: "player",
+            mute: false,
+            autostart: true,
+            language: "es",
+            cast: {
+                appid: "player",
+                logo: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
             },
-        ],
-        height: "100vh",
-        width: "100%",
-        aspectratio: "16:9",
-        stretching: "bestfit",
-        mediaid: "player",
-        mute: false,
-        autostart: true,
-        language: "es",
-        cast: {
-            appid: "player",
-            logo: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
-        },
-        logo: {
-            file: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
-            hide: "false",
-            position: "top-left",
-        }
-    });
-    // Preview Hack
-    setTimeout(function() {
-        jwplayer().setMute(false);
-        jwplayer().setControls(true);
-        },1000);
-        jwplayer().onTime(function(object) {
-            if (object.position > object.duration - 1) {
-                jwplayer().pause();
+            logo: {
+                file: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+                hide: "false",
+                position: "top-left",
             }
         });
-        </script>
+        // Preview Hack
+        setTimeout(function() {
+            jwplayer().setMute(false);
+            jwplayer().setControls(true);
+            },1000);
+            jwplayer().onTime(function(object) {
+                if (object.position > object.duration - 1) {
+                    jwplayer().pause();
+                }
+            });
+            </script>
         ';
 }
