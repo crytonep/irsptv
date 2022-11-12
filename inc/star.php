@@ -25,11 +25,13 @@
                                         $link = $nombre->find('a', 0)->href;
                                         if ($link === "#") {
                                             $link = "javascript:void(0)";
+                                            $enVivo = 'far fa-star';
                                         } else {
                                             $link = str_replace("/embed/star/?r=", "", $link);
                                             $link = base64_decode($link);
                                             $link = str_replace("//vercomofutbol.xyz/s/star_jwp.html?get=", "", $link);
                                             $link = "../tv?r=" . $link;
+                                            $enVivo = 'fa fa-circle text-danger faa-flash animated';
                                         }
                                     ?>
                                         <!-- Portfolio Item 1 -->
@@ -39,7 +41,7 @@
                                                 <a href="<?= $link ?>"></a>
                                             </div>
 
-                                            <i class="far fa-star"></i>
+                                            <i class=" <?= $enVivo ?> "></i>
                                             <h4 class="name"><?= $evento ?></h4>
                                             <span class="category"><?= $liga ?></span>
                                         </figure>
