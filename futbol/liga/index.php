@@ -18,7 +18,7 @@ $result = mysqli_fetch_array($ligas);
         <?php
         $ligas = mysqli_query($conn, "select * from agenda
         INNER JOIN ligas ON agenda.liga = ligas.ligaId
-        where liga = '$getLiga'
+        where liga = '$getLiga' AND status=1
         ORDER BY fecha asc");
         while ($result = mysqli_fetch_array($ligas)) {
             // Teams
