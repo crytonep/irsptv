@@ -3,7 +3,7 @@
     <div class="footer-social">
         <ul class="footer-social-links">
             <li>
-                <a href="https://t.me/+uyWDSC69RzFlNWE5" target="_blank">Telegram</a>
+                <a href="https://t.me/+yy9yaHG40RU0ODlh" target="_blank">Telegram</a>
             </li>
             <li>
                 <a href="https://chat.whatsapp.com/DZyOSVTT8xWBoGgNYTRF6j" target="_blank">WhatsApp</a>
