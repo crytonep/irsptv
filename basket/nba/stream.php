@@ -32,10 +32,10 @@ if (isset($_GET['g'])) {
     $base = "http://givemenbastreams.com/nba.php?g=";
     $m3u8 = $base . $g;
     $m3u8 = base64_encode($m3u8);
-    echo '<script>window.location.href = "../../tv/?nba&ifr=' . $m3u8 . '&id=' . $index . '";</script>';
+    echo '<script>window.location.href = "../../tv/?basket&nba&ifr=' . $m3u8 . '&id=' . $index . '";</script>';
 } elseif (isset($_GET['g2'])) {
     $base = "http://givemenbastreams.com/nba.php?g=";
     $m3u8 = $base . $g2;
     $m3u8 = base64_encode($m3u8);
-    echo '<script>window.location.href = "../../tv/?nba&ifr=' . $m3u8 . '&id=' . $index . '";</script>';
+    echo '<script>window.location.href = "../../tv/?basket&nba&ifr=' . $m3u8 . '&id=' . $index . '";</script>';
 }
