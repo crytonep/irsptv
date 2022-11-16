@@ -2,19 +2,35 @@
 <div class="row">
     <div class="col-xs-12 col-sm-12">
         <div class="block-title">
+            <?php
+            if ($type) {
+                $channels = mysqli_query($conn, "select * from channels
+                INNER JOIN categories ON channels.category = categories.categoryId
+                INNER JOIN countries ON channels.country = countries.countryId
+                where type = '$type'
+                ORDER BY RAND()
+                DESC LIMIT 12");
+            ?>
+            <h2>Canales Relacionados</h2>
+            <?php
+            } else {
+                $channels = mysqli_query($conn, "select * from channels
+                INNER JOIN categories ON channels.category = categories.categoryId
+                INNER JOIN countries ON channels.country = countries.countryId
+                where category = 11 AND type IN ('9','11')
+                ORDER BY RAND()
+                DESC LIMIT 12");
+            ?>
             <h2>Canales Deportivos</h2>
+            <?php
+            }
+            ?>
         </div>
     </div>
 </div>
 
 <div class="row">
     <?php
-    $channels = mysqli_query($conn, "select * from channels
-    INNER JOIN categories ON channels.category = categories.categoryId
-    INNER JOIN countries ON channels.country = countries.countryId
-    where category = 11 AND type IN ('9','11')
-    ORDER BY RAND()
-    DESC LIMIT 12");
     while ($result = mysqli_fetch_assoc($channels)) {
     ?>
     <div class="col-xs-6 col-sm-6 col-md-3">
