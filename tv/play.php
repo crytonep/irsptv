@@ -86,7 +86,7 @@ if (isset($_GET['ifr'])) {
         </div>
         <hr>
         <div id="relacionados">
-            <?php include('../inc/relacionados.php'); ?>
+            <?php include('../inc/canales.php'); ?>
         </div>
         <div class="container" id="adBanner2">
             <?php include('../inc/ads/popunder.php'); //include('../inc/ads/banner2.php');
