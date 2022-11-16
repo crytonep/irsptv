@@ -28,9 +28,9 @@ echo '
                     "widevine": {
                         "headers": [{
                             "name": "authorization",
-                            "value": atob(key)
+                            "value": atob("T0F1dGggb2F1dGhfY29uc3VtZXJfa2V5PTMzZWVlZjMyOWZkMzEyNzQzN2Q0YWJjZmFkN2U5MjE0NGM3ODUyMTVmZDA3MmUyZGRkMzYwMjhlZDVmNGIwNjMsIG9hdXRoX25vbmNlPURHQk01Qiwgb2F1dGhfc2lnbmF0dXJlPWxwa3NFSUM0TkhkbnV1U3Q5czNnOUR1bzdRQSUzRCwgb2F1dGhfc2lnbmF0dXJlX21ldGhvZD1ITUFDLVNIQTEsIG9hdXRoX3RpbWVzdGFtcD0xNjUwOTk1ODI2LCBvYXV0aF92ZXJzaW9uPTEuMA==")
                         }],
-                        "url": atob(key2)
+                        "url": atob("Ly9hcGkuYmxpbS5jb20vbGljZW5zZS93aWRldmluZQ==")
                     }
                 }
             }]
