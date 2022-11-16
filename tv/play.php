@@ -90,7 +90,7 @@ if (isset($_GET['ifr'])) {
         <div id="relacionados">
             <?php (!$_GET['r']) ? include('../inc/canales.php') : ""; ?>
         </div>
-        <div class="container" id="adBanner2">
+        <div id="adBanner2">
             <?php include('../inc/ads/popunder.php'); //include('../inc/ads/banner2.php');
             ?>
         </div>
