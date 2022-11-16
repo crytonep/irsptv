@@ -11,7 +11,6 @@ if (strpos($result['channelUrl'], "//dtvott-") !== false || strpos($result['chan
     $url = base64_encode("//germanyip.work/sv-mt.php?get=".$url."&key=".$result['key1']."&key2=".$result['key2']);
     //$url = $nURL.$url."&key=".$result['key1']."&key2=".$result['key2'];
     $url = $nURL.$url;
-    echo $url;
     echo '
     <a href="'.$url.'" target="_blank">
         <img width="100%" class="img-fluid" src="../img/player_img.png" alt="">
