@@ -15,7 +15,7 @@
                 $index = $result['categoryId'];
                 $queryQty = mysqli_query($conn, "select * from channels
                 where category = $index
-                AND type IN ('1', '9', '11', '12')");
+                AND type IN ('1','6','9','11','12')");
                 $totalChannels = mysqli_num_rows($queryQty);
                 if ($totalChannels < 6) {
                     $categoryStatus = "hidden";
