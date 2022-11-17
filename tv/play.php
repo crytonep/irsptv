@@ -66,7 +66,7 @@ if (isset($_GET['ifr'])) {
 <?php include('../inc/star.php');
 } ?>
 <div class="row">
-    <div class="col-8">
+    <div class="col-md-8 col-sm-12">
         <a id="playerFake" href="https://abolishmentglum.com/mkd1fhhe?key=81193c57b7f58377107604b71a3e49aa" target="_blank">
             <img class="img-fluid" src="<?= $app ?>img/player_img.png" alt="">
         </a>
@@ -84,7 +84,7 @@ if (isset($_GET['ifr'])) {
             <?php } ?>
         </div>
     </div>
-    <div class="col-4">
+    <div class="col-md-4 col-sm-12">
         <iframe class="hidden" id="twitch-chat-embed" src="https://www.twitch.tv/embed/iraffelive/chat?darkpopout&parent=iraffle.live" height="100%" width="100%">
         </iframe>
     </div>
