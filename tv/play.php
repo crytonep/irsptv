@@ -28,7 +28,7 @@ if (isset($_GET['ifr'])) {
     }
 }
 ?>
-<div class="container">
+<div class="">
     <div class="block-title">
         <h2><img width="38px" src="../img/canales/<?= $chnImg ?>.png" alt=""><?= $chnTxt ?></h2>
     </div>
@@ -47,31 +47,34 @@ if (isset($_GET['ifr'])) {
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
+<div class="row">
+    <div class="col-12">
+        <div class="container">
             <a id="playerFake" href="https://abolishmentglum.com/mkd1fhhe?key=81193c57b7f58377107604b71a3e49aa" target="_blank">
                 <img class="img-fluid" src="<?= $app ?>img/player_img.png" alt="">
             </a>
-            <?php if (isset($_GET['r'])) { ?>
-                <div class="hidden" id="playerContainer">
-                    <div id="player"></div>
-                    <?php
-                    include('../inc/scraper.php');
-                    echo '
+        </div>
+        <?php if (isset($_GET['r'])) { ?>
+            <div class="hidden" id="playerContainer">
+                <div id="player"></div>
+                <?php
+                include('../inc/scraper.php');
+                echo '
                     <script>
-                    var source = "'.base64_encode($_GET['r']).'";
-                    var key = "'.base64_encode($_GET['key']).'";
-                    var key2 = "'.base64_encode($_GET['key2']).'";
-                    var img = "'.base64_encode($_GET['img']).'";
-                    </script>';?>
-                    <script src="../js/player.js"></script>
-                </div>
-                <hr>
-                <div class="block-title">
-                    <h2>Eventos Star+</h2>
-                </div>
-            <?php include('../inc/star.php'); }?>
+                    var source = "' . base64_encode($_GET['r']) . '";
+                    var key = "' . base64_encode($_GET['key']) . '";
+                    var key2 = "' . base64_encode($_GET['key2']) . '";
+                    var img = "' . base64_encode($_GET['img']) . '";
+                    </script>'; ?>
+                <script src="../js/player.js"></script>
+            </div>
+            <hr>
+            <div class="block-title">
+                <h2>Eventos Star+</h2>
+            </div>
+        <?php include('../inc/star.php');
+        } ?>
+        <div class="container">
             <div class="hidden embed-responsive embed-responsive-16by9" id="playerContainer" style="width: 100%; margin: auto; box-shadow: 2px 2px 8px 2px #2c2c2c;">
                 <?php if ($type == 11) { ?>
                     <iframe class="embed-responsive-item" width="100%" height="100%" src="ckm.php?c=<?= $result['channelId'] ?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
@@ -81,18 +84,18 @@ if (isset($_GET['ifr'])) {
                     <iframe class="embed-responsive-item" width="100%" height="100%" src="hls.php?c=<?= $_GET['c'] ?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
                 <?php } elseif (isset($_GET['nba']) || isset($_GET['nfl']) || isset($_GET['mlb'])) { ?>
                     <iframe sandbox="allow-scripts allow-same-origin" class="embed-responsive-item" width="100%" height="100%" src="<?= base64_decode($_GET['ifr']) ?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
-                <?php } else {?>
+                <?php } else { ?>
                     <iframe class="embed-responsive-item" width="100%" height="100%" src="ck.php?c=<?= $result['channelId'] ?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
                 <?php } ?>
             </div>
         </div>
-        <hr>
-        <div id="relacionados">
-            <?php (!$_GET['r']) ? include('../inc/canales.php') : ""; ?>
-        </div>
-        <div id="adBanner2">
-            <?php include('../inc/ads/popunder.php'); //include('../inc/ads/banner2.php');
-            ?>
-        </div>
+    </div>
+    <hr>
+    <div id="relacionados">
+        <?php (!$_GET['r']) ? include('../inc/canales.php') : ""; ?>
+    </div>
+    <div id="adBanner2">
+        <?php include('../inc/ads/popunder.php'); //include('../inc/ads/banner2.php');
+        ?>
     </div>
 </div>
