@@ -15,13 +15,13 @@
 1. General styles
 ============================================================================= */
 
-html {
+/* html {
   position: relative;
   height: 100%;
   min-height: 100%;
   width: 100%;
   overflow: hidden;
-}
+} */
 
 body {
   position: initial;
@@ -3099,12 +3099,18 @@ ul.social-links li:last-child a {
   margin-bottom: 30px;
 }
 
+#playerFake img {
+  box-shadow: 2px 2px 8px 2px #2c2c2c;
+  border-radius: 10px;
+}
+
 .embed-responsive {
   position: relative;
   display: block;
   width: 100%;
   padding: 0;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .embed-responsive .embed-responsive-item,
@@ -3139,6 +3145,10 @@ ul.social-links li:last-child a {
 
 .embed-responsive-1by1:before{
   padding-top: 100%;
+}
+
+#relacionados {
+  margin-top: 1%;
 }
 
 .ajax-page-wrapper .portfolio-grid {
