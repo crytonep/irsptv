@@ -25,6 +25,7 @@
 </div>
 <?php
 include('../conn.php');
+include('../inc/ads/popunder.php');
 $canal = $_GET['c'];
 $query = mysqli_query($conn, "select * from channels
 where channelId='" . $canal . "'");
