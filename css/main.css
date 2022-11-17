@@ -3104,6 +3104,10 @@ ul.social-links li:last-child a {
   border-radius: 10px;
 }
 
+#twitch-chat-embed {
+  border-radius: 10px;
+}
+
 .embed-responsive {
   position: relative;
   display: block;
