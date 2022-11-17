@@ -9,7 +9,7 @@
                 INNER JOIN countries ON channels.country = countries.countryId
                 where type = '$type'
                 ORDER BY RAND()
-                DESC LIMIT 12");
+                DESC LIMIT 18");
             ?>
             <h2>Canales Relacionados</h2>
             <?php
@@ -17,9 +17,9 @@
                 $channels = mysqli_query($conn, "select * from channels
                 INNER JOIN categories ON channels.category = categories.categoryId
                 INNER JOIN countries ON channels.country = countries.countryId
-                where category = 11 AND type IN ('9','11')
+                where category = 11 AND type IN ('6','9','11','12')
                 ORDER BY RAND()
-                DESC LIMIT 12");
+                DESC LIMIT 18");
             ?>
             <h2>Canales Deportivos</h2>
             <?php
@@ -33,7 +33,7 @@
     <?php
     while ($result = mysqli_fetch_assoc($channels)) {
     ?>
-    <div class="col-xs-6 col-sm-6 col-md-3">
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
         <a href="<?=$app?>tv/?c=<?=$result['channelId']?>">
             <div class="lm-canal lm-info-block gray-default">
                 <img src="<?=$app?>img/canales/<?=$result['channelImg']?>.png" alt="" srcset="">
