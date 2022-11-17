@@ -85,7 +85,7 @@ if (isset($_GET['ifr'])) {
         </div>
     </div>
     <div class="col-4">
-        <iframe class="hidden" id="twitch-chat-embed" src="https://www.twitch.tv/embed/iraffelive/chat?parent=iraffle.live" height="100%" width="100%">
+        <iframe class="hidden" id="twitch-chat-embed" src="https://www.twitch.tv/embed/iraffelive/chat??darkpopout&parent=iraffle.live" height="100%" width="100%">
         </iframe>
     </div>
 </div>
