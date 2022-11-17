@@ -32,7 +32,7 @@ if (isset($_GET['ifr'])) {
         <h2><img width="38px" src="../img/canales/<?= $chnImg ?>.png" alt=""><?= $chnTxt ?></h2>
     </div>
 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
-<div class="container" id="adBanner">
+<div id="adBanner">
     <div class="row">
         <div class="col-12 text-center">
             <?php //include('../inc/ads/banner.php');
