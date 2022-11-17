@@ -1,3 +1,18 @@
+<style>
+    body {
+        background: #000;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 100%!important;
+        height: 100vh!important;
+    }
+    #player {
+        height: 100%!important;
+        width: 100%!important;
+    }
+</style>
 <script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
@@ -5,7 +20,9 @@
 <script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
 <script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
 <script src="//ewwink.github.io/clappr-youtube-plugin/clappr-youtube-plugin.js"></script>
-<div id="player"></div>
+<div class="container">
+    <div id="player"></div>
+</div>
 <?php
 include('../conn.php');
 $canal = $_GET['c'];

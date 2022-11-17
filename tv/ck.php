@@ -1,3 +1,18 @@
+<style>
+    body {
+        background: #000;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 100%!important;
+        height: 100vh!important;
+    }
+    #player {
+        height: 100%!important;
+        width: 100%!important;
+    }
+</style>
 <?php
 include('../conn.php');
 $canal = $_GET['c'];
@@ -20,7 +35,9 @@ if (strpos($result['channelUrl'], "//dtvott-") !== false || strpos($result['chan
 ?>
     <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
     <script>jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
-    <div id="player"></div>
+    <div class="container">
+        <div id="player"></div>
+    </div>
     <?php
     if ($result['type'] == 1) {
         $source = base64_encode($result['channelUrl']);
@@ -42,7 +59,7 @@ if (strpos($result['channelUrl'], "//dtvott-") !== false || strpos($result['chan
                     ],
                 },
             ],
-            height: "100vh",
+            height: "100%",
             width: "100%",
             aspectratio: "16:9",
             stretching: "bestfit",
