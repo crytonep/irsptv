@@ -34,6 +34,7 @@ setTimeout(() => {
     $("#playerFake").click(function () {
         console.log("Click en player fake");
         $("#playerContainer").removeClass('hidden');
+        $("#twitch-chat-embed").removeClass('hidden');
         $(this).slideUp();
     })
 
