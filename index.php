@@ -13,20 +13,6 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
-                <script>jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
-                <div class="container">
-                    <div id="player"></div>
-                    <div class="page-subtitle text-center">
-                        <h4><a class="button btn-primary" href="play/?mundial"><i class="fa fa-crown text-warning"></i> ¡Hazte Premium y accede a este y más canales!</a></h4>
-                    </div>
-                </div>
-                <script>
-                var source = btoa("http://213.239.217.94:8080/live/promo/mundial/3.m3u8");
-                var key = btoa("ce17264b317db108f19cdc11aa1a9e66");
-                var key2 = btoa("ce17264b317db108f19cdc11aa1a9e66");
-                </script>
-                <script src="js/playerm.js"></script>
                 <a href="futbol/liga?id=38&juego=1143">
                     <div class="card product-card lm-info-block gray-default">
                         <div class="main-event">
@@ -53,6 +39,9 @@
                         </div>
                     </div>
                 </a>
+                <div class="page-subtitle text-center">
+                    <h4><a class="button btn-primary" href="play/?mundial"><i class="fa fa-crown text-warning"></i> ¡Hazte Premium y disfruta de canales exclusivos!</a></h4>
+                </div>
             </div>
         </div>
     </div>
