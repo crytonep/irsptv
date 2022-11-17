@@ -34,7 +34,7 @@
     while ($result = mysqli_fetch_assoc($channels)) {
     ?>
     <div class="col-xs-6 col-sm-6 col-md-3">
-        <a href="tv/?c=<?=$result['channelId']?>">
+        <a href="<?=$app?>tv/?c=<?=$result['channelId']?>">
             <div class="lm-canal lm-info-block gray-default">
                 <img src="<?=$app?>img/canales/<?=$result['channelImg']?>.png" alt="" srcset="">
                 <h4><?=$result['channelName']?></h4>
