@@ -3104,12 +3104,10 @@ ul.social-links li:last-child a {
   border-radius: 10px;
 }
 
-#chat {
-  min-height: 300px;
-}
-
 #twitch-chat-embed {
   border-radius: 10px;
+  min-height: 500px;
+  max-height: 800px;
 }
 
 .embed-responsive {
