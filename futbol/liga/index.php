@@ -138,6 +138,120 @@ $result = mysqli_fetch_array($ligas);
                                     </a>
                                 </div>
                             <?php } ?>
+
+                            <?php
+                            // Canal 7
+                            $canal7 = $result['canal7'];
+                            $c7 = mysqli_query($conn, "select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal7'");
+                            $row = mysqli_fetch_array($c7);
+                            if ($canal7 === null || $canal7 === "") {
+                                // No mostramos nada
+                            } else {
+                            ?>
+                                <div>
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
+                                        <?= $row['channelName'] ?>
+                                    </a>
+                                </div>
+                            <?php } ?>
+
+                            <?php
+                            // Canal 8
+                            $canal8 = $result['canal8'];
+                            $c8 = mysqli_query($conn, "select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal8'");
+                            $row = mysqli_fetch_array($c8);
+                            if ($canal8 === null || $canal8 === "") {
+                                // No mostramos nada
+                            } else {
+                            ?>
+                                <div>
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
+                                        <?= $row['channelName'] ?>
+                                    </a>
+                                </div>
+                            <?php } ?>
+
+                            <?php
+                            // Canal 9
+                            $canal9 = $result['canal9'];
+                            $c9 = mysqli_query($conn, "select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal9'");
+                            $row = mysqli_fetch_array($c9);
+                            if ($canal9 === null || $canal9 === "") {
+                                // No mostramos nada
+                            } else {
+                            ?>
+                                <div>
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
+                                        <?= $row['channelName'] ?>
+                                    </a>
+                                </div>
+                            <?php } ?>
+
+                            <?php
+                            // Canal 10
+                            $canal10 = $result['canal10'];
+                            $c10 = mysqli_query($conn, "select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal10'");
+                            $row = mysqli_fetch_array($c10);
+                            if ($canal10 === null || $canal10 === "") {
+                                // No mostramos nada
+                            } else {
+                            ?>
+                                <div>
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
+                                        <?= $row['channelName'] ?>
+                                    </a>
+                                </div>
+                            <?php } ?>
+
+                            <?php
+                            // Canal 11
+                            $canal11 = $result['canal11'];
+                            $c11 = mysqli_query($conn, "select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal11'");
+                            $row = mysqli_fetch_array($c11);
+                            if ($canal11 === null || $canal11 === "") {
+                                // No mostramos nada
+                            } else {
+                            ?>
+                                <div>
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
+                                        <?= $row['channelName'] ?>
+                                    </a>
+                                </div>
+                            <?php } ?>
+
+                            <?php
+                            // Canal 12
+                            $canal12 = $result['canal12'];
+                            $c12 = mysqli_query($conn, "select * from channels
+                                INNER JOIN countries ON channels.country = countries.countryId
+                                where channelId = '$canal12'");
+                            $row = mysqli_fetch_array($c12);
+                            if ($canal12 === null || $canal12 === "") {
+                                // No mostramos nada
+                            } else {
+                            ?>
+                                <div>
+                                    <a class="btn btn-lg btn-primary" href="../../tv/?futbol&id=<?= $index ?>&c=<?= $row['channelId'] ?>">
+                                        <i class="flag <?= $row['countryImg'] ?>"></i>
+                                        <?= $row['channelName'] ?>
+                                    </a>
+                                </div>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>

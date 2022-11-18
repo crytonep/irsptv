@@ -77,6 +77,12 @@ if ($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mund
         <i class="flag es"></i>
         Gol Mundial | VIP SD
         </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=792">
+        <i class="flag es"></i>
+        Gol Mundial | HD
+        </a>
     </div>';
 } elseif ($canal2 === "Gol Mundial" || $canal2 === "Gol Mundial" || $canal2 === "Gol Mundial" || $canal2 === "golm") {
     $canalImg = "golm";
@@ -91,6 +97,12 @@ if ($canal === "Gol Mundial" || $canal === "Gol Mundial" || $canal === "Gol Mund
         <a class="btn btn-lg btn-primary" href="' . $app . 'play?futbol&id=' . $index . '&c=golmsd">
         <i class="flag es"></i>
         Gol Mundial | VIP SD
+        </a>
+    </div>
+    <div>
+        <a class="btn btn-lg btn-primary" href="' . $app . 'tv/?futbol&id=' . $index . '&c=792">
+        <i class="flag es"></i>
+        Gol Mundial | HD
         </a>
     </div>';
 }
