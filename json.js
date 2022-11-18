@@ -1,5 +1,5 @@
 // read local JSON file in javascript
-fetch("json.json")
+fetch("https://librefutbol.com/star-plus/eventos.json")
     .then(function (response) {
         return response.json();
     })
