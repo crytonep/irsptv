@@ -1,8 +1,10 @@
-// read local JSON file in javascript
-fetch("https://librefutbol.com/star-plus/eventos.json")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-    })
+async function getStar() {
+    const response = await fetch('https://librefutbol.com/star-plus/eventos.json');
+    response.ok;     // => false
+    response.status; // => 404
+    const text = await response.json();
+    return text;
+}
+getStar().then(text => {
+    text; // => 'Page not found'
+});
