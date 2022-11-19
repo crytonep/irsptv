@@ -1,1 +1,1 @@
-<iframe src="test.php" frameborder="0"></iframe>
+<iframe src="https://irpc.ga/mg/play/sandbox.php?get=https://megatelevisionhd.com/embed/repro/?r=Ly9ncmVnb3JzYW1zYS5saWZlL2VtYmVkL3VzL2ZveGRlcG9ydGVzLnBocA==" frameborder="0"></iframe>
