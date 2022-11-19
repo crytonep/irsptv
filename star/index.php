@@ -19,7 +19,7 @@ include('../inc/scraper.php'); ?>
                         var obj = arr[i];
                         url = obj['url'];
                         let nurl = url.replace("/embed/eventos/?r=", "bp.php?r=");
-                        console.log(nurl)
+                        //console.log(nurl)
                         status = obj['status'];
                         if (status == "EN VIVO")
                             icon = "fa fa-circle text-danger faa-flash animated";
