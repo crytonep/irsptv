@@ -11,7 +11,7 @@ include('../inc/scraper.php'); ?>
             var x = Math.random().toString(36).substring(7);
 
             $.ajax({
-                url: "https://api.codetabs.com/v1/proxy?quest=https://iraffle.live/json.json?" + x,
+                url: "https://api.codetabs.com/v1/proxy?quest=https://librefutbol.com/star-plus/eventos.json?" + x,
                 type: "get",
                 success: function(arr) {
                     var content = '';
