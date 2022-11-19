@@ -6,6 +6,7 @@
 </style>
 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
 <?php
+include('../inc/ads/popunder.php');
 echo '
 <script>
 var source = "' . base64_encode($_GET['r']) . '";
