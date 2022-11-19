@@ -1,3 +1,9 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
 <?php
 echo '
