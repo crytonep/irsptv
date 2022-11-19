@@ -48,7 +48,7 @@ if (isset($_GET['ifr'])) {
         </a>
         <div class="hidden embed-responsive embed-responsive-16by9" id="playerContainer">
             <?php if (isset($_GET['r'])){ ?>
-                <iframe class="embed-responsive-item" width="100%" height="100%" src="test.php?r=<?=$_GET['r']?>&key=<?=$_GET['key']?>&key2=<?=$_GET['key2']?>&img=<?=$_GET['img']?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
+                <iframe class="embed-responsive-item" width="100%" height="100%" src="star.php?r=<?=$_GET['r']?>&key=<?=$_GET['key']?>&key2=<?=$_GET['key2']?>&img=<?=$_GET['img']?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
             <?php } elseif ($type == 11) { ?>
                 <iframe class="embed-responsive-item" width="100%" height="100%" src="ckm.php?c=<?= $result['channelId'] ?>" frameborder="0" scrolling="no" allowfullscreen allow-encrypted-media></iframe>
             <?php } elseif ($type == 6) { ?>
