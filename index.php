@@ -13,7 +13,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-            <?php $mundi = mysqli_query($conn, "select * from agenda where id=1145");
+            <?php $mundi = mysqli_query($conn, "select * from agenda where liga=38");
             $result = mysqli_fetch_array($mundi);
             include('inc/cntdwn.php');
             $local = $result['local'];
