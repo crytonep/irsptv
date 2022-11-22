@@ -17,7 +17,7 @@
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <script src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
-<script>let source = btoa("http://213.239.217.94:8080/live/promo/mundial/45.m3u8");</script>
+<script>let source = btoa("http://213.239.217.94:8080/live/promo/mundial/3.m3u8");</script>
 <div class="alert alert-warning text-center" role="alert">
     ¡Estás mirando un canal Premium!
 </div>
