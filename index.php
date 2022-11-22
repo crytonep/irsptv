@@ -29,15 +29,15 @@
                             </div>
                             <div class="match">
                                 <div class="team">
-                                    <img width="60px" src="img/equipos/mundial/<?=$result['local'];?>.png" alt="" />
-                                    <h4><?=$local?></h4>
+                                    <img width="60px" src="img/equipos/mundial/<?=str_replace(' ', '', $result['local'])?>.png" alt="" />
+                                    <h4><?=ucfirst($local)?></h4>
                                 </div>
                                 <div class="vs">
                                     <h6>vs</h6>
                                 </div>
                                 <div class="team">
-                                    <img width="60px" src="img/equipos/mundial/<?=$result['visita'];?>.png" alt="" />
-                                    <h4><?=$visita?></h4>
+                                    <img width="60px" src="img/equipos/mundial/<?=str_replace(' ', '', $result['visita'])?>.png" alt="" />
+                                    <h4><?=ucfirst($visita)?></h4>
                                 </div>
                             </div>
                             <div class="channel">
