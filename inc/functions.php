@@ -5,6 +5,8 @@ $app = "//{$_SERVER['SERVER_NAME']}/";
 
 $base = "//".$_SERVER['SERVER_NAME']."/";
 
+header("location: $app./server-error.html");
+
 // GET REFER
 // $refer = $_GET['refer'];
 $refer = $_SERVER['HTTP_REFERER'];
@@ -13,7 +15,7 @@ $actual_link = "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 // GET USER AGENT
 $useragent = $_SERVER['HTTP_USER_AGENT'];
 //echo $useragent;
-if (strpos($useragent, "Windows")){
+if (!strpos($useragent, "Windows")){
     $useragent = "pc";
 } else{
     $useragent = "mobile";
