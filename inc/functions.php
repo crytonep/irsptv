@@ -5,7 +5,7 @@ $app = "//{$_SERVER['SERVER_NAME']}/";
 
 $base = "//".$_SERVER['SERVER_NAME']."/";
 
-header("location: $app./server-error.html");
+//header("location: $app./server-error.html");
 
 // GET REFER
 // $refer = $_GET['refer'];
